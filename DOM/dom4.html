@@ -1,0 +1,178 @@
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+</head>
+<style type="text/css">
+	div {
+		float: left;
+	}
+	a {
+		cursor: pointer;
+		text-decoration: none;
+	}
+
+	ul {
+		display:none;
+		margin: 0;
+		width: 218px;
+		font-size: 14px;
+		max-height: 244px;
+		background: #34495e;
+		border-radius: 5px;
+		list-style: none;
+		padding: 6px 6px;
+	}
+	li {
+		color: #fff;
+		line-height: 20px;
+		border-radius: 5px;
+		padding-bottom: 3px;
+	}
+	.tag {
+		position: relative;
+		float: left;
+		width: 200px;height: 30px;
+		font: normal 20px/30px "微软雅黑";
+		text-align: left;
+		text-indent: 1em;
+		color: #fff;
+		background: #2fe2bf;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+
+	}
+	.cli {
+		display: inline-block;
+		width: 30px;height: 30px;
+		font: normal 20px/30px "微软雅黑";
+		text-align: center;
+		color: #fff;
+		background: #2fe2bf;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+	ul li a {
+		display: block;
+		width: 100%;
+		border-radius: 5px;
+		text-indent: 1em;
+		line-height: 20px;			
+	}
+	ul li a:hover {
+		background: #2fe2bf;
+	}
+	.selected {
+		background: #2fe2bf;
+	}
+</style>
+<div class="dropdown" id="dropdown1"></div>
+<div class="dropdown" id="dropdown2"></div>
+<script type="text/javascript">
+	// Define Component
+	var Dropdown = function (){
+		this.getParent = function (dom, className){
+			do {
+				dom = dom.parentNode;
+			} while (dom.getAttribute && dom.getAttribute('class') != className);
+			return dom;
+		};
+		this.selectValue = function (value){
+			this.list.innerHTML = '';
+			for (i in this.items) {
+				var itemName = this.items[i];
+				var item = document.createElement('li');
+				if (itemName == value) {
+					item.setAttribute('class', 'selected');
+				}
+				item.innerHTML = '<a>' + itemName + '</a>';
+				this.list.appendChild(item);
+			}
+		};
+		this.init = function (parent, items, selected){
+			// create dom
+			var that = this;
+			parent.dropdown = this;
+			this.parent = parent;
+			this.parent.innerHTML = '<a class="tag" href="#"></a><a class="cli" href="#">∨</a><ul class="list" style="display: none;"></ul>';
+			this.tag = parent.getElementsByClassName('tag')[0];
+			this.cli = parent.getElementsByClassName('cli')[0];
+			this.list = parent.getElementsByClassName('ltiist')[0];
+			this.items = items;
+			this.tag.innerHTML = selected;
+			this.selectValue(selected);
+			// bind event
+			var itemDoms = this.parent.getElementsByTagName('li');
+			var clearSelected = function (){
+				var selected = that.parent.getElementsByClassName('selected')[0];
+				selected.setAttribute("class","");
+			};
+			var showpanel = function (){
+				that.list.style.display  = 'block';
+				if (that.onShow) {
+					that.onShow();
+				}
+			};
+			var hidepanel = function (){
+				var list = document.getElementsByClassName('list');
+				for (var i = 0; i < list.length; i ++) {
+					if (list[i].style.display != 'none') {
+						list[i].style.display = 'none';
+						var dropdown = that.getParent(list[i], 'dropdown').dropdown;
+						if (dropdown.onHide) {
+							dropdown.onHide();
+						}
+					}
+				}
+			};
+			parent.onclick = function(event) {
+				if (that.getParent(event.target, 'list') == document) {
+					showpanel();
+					event.stopPropagation();
+				}
+			};
+			document.onclick = function(event){
+				hidepanel();	
+			};
+			for (var i = 0; i < itemDoms.length; i++) {
+				var item  = itemDoms[i];
+				item.onclick = function(event) {
+					var target = event.target;
+					clearSelected();
+					this.setAttribute("class", "selected")
+					that.tag.innerHTML = target.innerHTML;
+					// if (that.onSelected) {
+					// 	that.onSelected(that.tag.innerHTML);
+					// }
+				};
+			}
+		};
+		this.setValue = function(value) {
+			this.tag.innerHTML = value;
+			this.selectValue(value);
+		};
+		this.getValue = function() {
+			return this.tag.innerHTML;
+		};
+	};
+	// Use Component
+	var dropdown1 = new Dropdown();
+	dropdown1.init(document.getElementById('dropdown1'), ['Choose hero', 'Spider Man', 'Wolverine','Captain America','X-Men','Crocodile'], 'Crocodile');
+	// dropdown1.setValue('Spider Man');
+	// dropdown1.setValue('Wolverine');
+	// alert(dropdown1.getValue()); // item1
+	// dropdown1.onSelected = function(value) {
+	// 	alert(value);
+	// };
+	// dropdown1.onShow = function() {
+	// 	alert('show1');
+	// };
+	// dropdown1.onHide = function() {
+	// 	alert('hide1');
+	// }
+
+	var dropdown2 = new Dropdown();
+	dropdown2.init(document.getElementById('dropdown2'), ['a', 'b', 'c'], 'a');
+	// dropdown2.onHide = function() {
+	// 	alert('hide2');
+	// }
+</script>

@@ -1,0 +1,160 @@
+/*
+For shery 2015-6-24
+resetcss v1.0
+*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, input, button, textarea, p, span, a, blockquote, th, td { margin: 0; padding: 0; }
+body { background: #fff; color: #000; font-size: 14px; font-family: Arial, sans-serif, "宋体", "微软雅黑"; }
+h1, h2, h3, h4, h5, h6 { font-weight: normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var, i, b { font-style: normal; font-weight: normal; }
+input, textarea, select, button, option { font-family: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; }
+ul, ol, li, dl { list-style: none;}
+table { border-collapse: collapse;}
+a { color: #000; text-decoration: none; }
+a:hover { text-decoration: none; cursor: pointer; }
+img { border: none; }
+
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { *zoom:1;}
+
+
+/*space*/
+.space_1 { padding:1px 0 0 0; }
+.space_2 { padding:2px 0 0 0; }
+.space_3 { padding:3px 0 0 0; }
+.space_4 { padding:4px 0 0 0; }
+.space_5 { padding:5px 0 0 0; }
+.space_6 { padding:6px 0 0 0; }
+.space_7 { padding:7px 0 0 0; }
+.space_8 { padding:8px 0 0 0; }
+.space_9 { padding:9px 0 0 0; }
+.space_10 { padding:10px 0 0 0; }
+.space_12 { padding:12px 0 0 0; }
+.space_15 { padding:15px 0 0 0; }
+.space_20 { padding:20px 0 0 0; }
+.space_25 { padding:25px 0 0 0; }
+.space_30 { padding:30px 0 0 0; }
+.space_50 { padding:50px 0 0 0; }
+
+
+body{
+	background: url(../images/bg.png) repeat 0 0;
+}
+.cont{
+	width:1024px;
+	margin:0 auto;
+}
+.head{
+	height:50px;
+	padding:40px 0;
+}
+.head .logo{
+	float: left;
+	width:290px;height:34px;
+	padding:8px 0;
+}
+.head .logo img{
+	width:200px;height:34px;
+}
+.head .nav{
+	float: right;
+	height:50px;
+}
+.head .nav dt{
+	float:left;
+}
+.head .nav dt img{
+	height:50px;
+}
+.head .nav dd{
+	float:left;
+	margin-left:30px;
+	font:14px/50px Arial;
+}
+.head .nav dd a{
+	color:#fff;
+}
+
+/*内容样式*/
+.title{
+	margin-top: 180px;
+	text-align: center;
+}
+.title h1 img{
+	width: 320px;
+}
+.title p{
+	font-size: 20px;
+	color: #747474;
+	margin-top: 20px;
+}
+.code{
+	width: 650px;
+	font-size: 16px;
+	margin: 30px auto 0;
+	padding: 12px 10px;
+	background: #212327;
+	border: 3px solid #212f38;
+}
+.msg_list{
+	margin-top: 100px;
+}
+.msg_list li{
+	text-align: center;
+}
+.msg_list li h3{
+	color: #fff;
+	font-size: 22px;
+	margin-top: 100px;
+}
+.msg_list li p{
+	color: #555;
+	font-size: 16px;
+	margin-top: 10px;
+}
+.msg_list li img{
+	width: 600px;
+	border: 3px solid #0f1f29;
+	margin-top: 40px;
+}
+.last{
+	text-align: center;
+	margin: 150px 0;
+}
+.last a{
+	display: block;
+	font-size: 14px;
+	color: #d8d9da;
+	margin-bottom: 30px;
+}
+.last .logo{
+	margin: 0 auto;
+/*	width: 192px;height: 50px;*/
+}
+.last .logo img{
+	width: 192px;
+}
+/*页脚样式*/
+.foot{
+	margin-top: 50px;
+	width: 1024px;height: 100px;
+	/*background: rgba(124,0,180,0.2);*/
+}
+.footlf{
+	float: left;
+	padding-top: 40px;
+}
+.footlf p{
+	color: #fff;
+	margin-bottom: 10px;
+}
+.footlf span{
+	color: #0071B6;
+	cursor: pointer;
+}
+.footrg{
+	float: right;
+}
+.footrg img{
+	height: 100px;
+}

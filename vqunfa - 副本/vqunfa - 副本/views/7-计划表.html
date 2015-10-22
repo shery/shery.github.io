@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<link rel="stylesheet" type="text/css" href="../css/basic.css" />
+<link rel="stylesheet" type="text/css" href="../css/layout.css" />
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/layout.js"></script>
+<title>计划表</title>
+</head>
+<body>
+	<div class="head">
+		<div class="w1200">
+			<h1 class="logo">
+				<img src="../images/logo.png" title="V群发" alt="V群发" />
+				<span>群发素材、定时群发、同步群发</span>
+			</h1>
+			<div class="user">
+				<a href="javascript:void(0);">登录</a>
+				|
+				<a href="javascript:void(0);">注册</a>
+			</div>
+		</div>
+	</div>
+	<div class="body">
+		<div class="account">
+			<span class="prev">&lt;</span>
+			<dl>
+				<dd>
+					<img src="../images/avatar1.jpg" />
+					<p><em class="type_serve"></em><em class="prove_true"></em></p>
+					<span>中央花园官方微信</span>
+				</dd>
+				<dd>
+					<img src="../images/avatar2.jpg" />
+					<p><em class="type_blogs"></em><em class="prove_false"></em></p>
+					<span>华韩美容-做最好的自己</span>
+				</dd>
+				<dd>
+					<img src="../images/avatar3.jpg" />
+					<p><em class="type_serve"></em><em class="prove_true"></em></p>
+					<span>华润 · 幸福里</span>
+				</dd>
+				<dd>
+					<img src="../images/avatar4.jpg" />
+					<p><em class="type_blogs"></em><em class="prove_false"></em></p>
+					<span>新农哥 - 坚果</span>
+				</dd>
+				<dd>
+					<img src="../images/avatar5.jpg" />
+					<p><em class="type_serve"></em><em class="prove_true"></em></p>
+					<span>有戏 - 互动推</span>
+				</dd>
+				<dt>
+					<img onclick="showAccredit();" src="../images/add.png" />
+				</dt>
+			</dl>
+			<span class="next">&gt;</span>
+		</div>
+		<div class="side">
+			<dl>
+				<dt><em class="i_square"></em>广场</dt>
+				<dd><a href="javascript:void(0);">素材中心</a></dd>
+			</dl>
+			<dl>
+				<dt><em class="i_function"></em>功能</dt>
+				<dd><a class="active" href="javascript:void(0);">高级群发</a></dd>
+			</dl>
+			<dl>
+				<dt><em class="i_control"></em>管理</dt>
+				<dd><a href="javascript:void(0);">我的素材</a></dd>
+			</dl>
+			<div class="code">
+				<img src="../images/code.jpg" />
+				<span>扫二维码，新鲜素材天天送达</span>
+			</div>
+		</div>
+		<div class="main">
+			<h2 class="title">高级群发</h2>
+			<div class="tab_title">
+				<a href="javascript:void(0);">新建计划</a>
+				<a class="active" href="javascript:void(0);">计划表</a>
+			</div>
+			<div class="plans">
+				<h6>订阅号一个粉丝一天只能接收1次群发消息，服务号一个粉丝一个月最多只能接收4次群发消息，故不会100%成功发送，发送时间大约1小时</h6>
+				<ul>
+					<li>
+						<div class="img"><img src="../images/avatar1.jpg" /></div>
+						<dl>
+							<dd><a href="javascript:void(0);">【<strong>单条</strong>】招集小伙伴们参与“六一翻翻看”活动，翻出儿童大礼包！</a></dd>
+						</dl>
+						<div class="msg">
+							<p>
+								<span>有戏-淘插件</span>
+								<a href="javascript:void(0);" class="color_green">修改编辑</a>
+							</p>
+							<p>
+								未分组&nbsp;&nbsp;&nbsp;&nbsp;
+								女&nbsp;&nbsp;&nbsp;&nbsp;
+								中国&nbsp;&nbsp;&nbsp;&nbsp;
+								福建&nbsp;&nbsp;&nbsp;&nbsp;
+								厦门
+							</p>
+						</div>
+						<div class="clear"></div>
+					</li>
+					<li>
+						<div class="img"><img src="../images/avatar2.jpg" /></div>
+						<dl>
+							<dd><a href="javascript:void(0);">【<strong>第1条</strong>】招集小伙伴们参与“六一翻翻看”活动，翻出儿童大礼包！</a></dd>
+							<dd><a href="javascript:void(0);">【<strong>第2条</strong>】招集小伙伴们参与“六一翻翻看”活动，翻出儿童大礼包！</a></dd>
+						</dl>
+						<div class="msg">
+							<p>
+								<span>有戏-淘插件</span>
+								<a href="javascript:void(0);" class="color_red">取消计划</a>
+								<em>2015-6-16 20:44</em>
+							</p>
+							<p>
+								未分组&nbsp;&nbsp;&nbsp;&nbsp;
+								女&nbsp;&nbsp;&nbsp;&nbsp;
+								中国&nbsp;&nbsp;&nbsp;&nbsp;
+								福建&nbsp;&nbsp;&nbsp;&nbsp;
+								厦门
+							</p>
+						</div>
+						<div class="clear"></div>
+					</li>
+					<li>
+						<div class="img"><img src="../images/avatar1.jpg" /></div>
+						<dl>
+							<dd><a href="javascript:void(0);">【<strong>单条</strong>】招集小伙伴们参与“六一翻翻看”活动，翻出儿童大礼包！</a></dd>
+						</dl>
+						<div class="msg">
+							<p>
+								<span>有戏-淘插件</span>
+								<a href="javascript:void(0);">成功发送：9023/9153人</a>
+								<em>2015-6-16 20:44</em>
+							</p>
+							<p>
+								未分组&nbsp;&nbsp;&nbsp;&nbsp;
+								女&nbsp;&nbsp;&nbsp;&nbsp;
+								中国&nbsp;&nbsp;&nbsp;&nbsp;
+								福建&nbsp;&nbsp;&nbsp;&nbsp;
+								厦门
+							</p>
+						</div>
+						<div class="clear"></div>
+					</li>
+					<li>
+						<div class="img"><img src="../images/avatar2.jpg" /></div>
+						<dl>
+							<dd><a href="javascript:void(0);">【<strong>第1条</strong>】招集小伙伴们参与“六一翻翻看”活动，翻出儿童大礼包！</a></dd>
+							<dd><a href="javascript:void(0);">【<strong>第2条</strong>】招集小伙伴们参与“六一翻翻看”活动，翻出儿童大礼包！</a></dd>
+							<dd><a href="javascript:void(0);">【<strong>第3条</strong>】招集小伙伴们参与“六一翻翻看”活动，翻出儿童大礼包！</a></dd>
+						</dl>
+						<div class="msg">
+							<p>
+								<span>有戏-淘插件</span>
+								<a href="javascript:void(0);">成功发送：9023/9153人</a>
+								<em>2015-6-16 20:44</em>
+							</p>
+							<p>
+								未分组&nbsp;&nbsp;&nbsp;&nbsp;
+								女&nbsp;&nbsp;&nbsp;&nbsp;
+								中国&nbsp;&nbsp;&nbsp;&nbsp;
+								福建&nbsp;&nbsp;&nbsp;&nbsp;
+								厦门
+							</p>
+						</div>
+						<div class="clear"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="pages" style="border-top:0;">
+				<a href="javascript:void(0);" class="prev"><i></i></a>
+				<span>2/4</span>
+				<a href="javascript:void(0);" class="next"><i></i></a>
+				<input type="text" />
+				<a href="javascript:void(0);">跳转</a>
+			</div>
+			<div class="space_20"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="foot">
+		<a href="javascript:void(0);">关于我们</a>
+		<a href="javascript:void(0);">服务协议</a>
+		<a href="javascript:void(0);">运营规范</a>
+		<a href="javascript:void(0);">客服中心</a>
+		<a href="javascript:void(0);">联系邮箱</a>
+		<a href="javascript:void(0);">侵权投诉</a>
+		<span>Copyright © 2012-2015 Vqunfa. All Rights Reserved.</span>
+	</div>
+	<!-- 新增素材 弹出框 -->
+	<div class="material_hint">
+		<div class="cont">
+			<div class="title">
+				<strong>选择素材</strong>
+				<em class="close" onclick="hideMaterialHint();">╳</em>
+			</div>
+			<div class="list">
+				<div class="subtitle">
+					<h3>
+						<a href="javascript:void(0);"><em class="newmsg_ico"></em>新建单条图文</a>
+						<a href="javascript:void(0);"><em class="center_ico"></em>去素材中心挑选</a>	
+					</h3>
+				</div>
+				<ul>
+					<li>
+						<h3><a href="javascript:void(0);">关注“演示”，领取现金红包</a></h3>
+						<div class="source">
+							05月28日&nbsp;&nbsp;&nbsp;&nbsp;风一样的少年
+						</div>
+						<div class="msgbox">
+							<div class="img"><img src="../images/img1.jpg" /></div>
+							<p>关注“演示”公众号，回复关键词【红包】，即可领取现金红包。</p>
+						</div>
+						<div class="checked"><img src="../images/checked.png" /></div>
+					</li>
+					<li>
+						<h3><a href="javascript:void(0);">关注“演示”，领取现金红包</a></h3>
+						<div class="source">
+							05月28日&nbsp;&nbsp;&nbsp;&nbsp;风一样的少年
+						</div>
+						<div class="msgbox">
+							<div class="img"><img src="../images/img2.jpg" /></div>
+							<p>关注“演示”公众号，回复关键词【红包】，即可领取现金红包，直接打入微信账户的哦！多谢几个字，让该内容有三行，以验证瀑布流的效果~</p>
+						</div>
+						<div class="checked"><img src="../images/checked.png" /></div>
+					</li>
+					<li>
+						<h3><a href="javascript:void(0);">关注“演示”，领取现金红包</a></h3>
+						<div class="source">
+							05月28日&nbsp;&nbsp;&nbsp;&nbsp;风一样的少年
+						</div>
+						<div class="msgbox">
+							<div class="img"><img src="../images/img3.jpg" /></div>
+							<p>关注“演示”公众号，回复关键词【红包】，即可领取现金红包，直接打入微信账户的哦！多谢几个字，让该内容有三行，以验证瀑布流的效果~</p>
+						</div>
+						<div class="checked"><img src="../images/checked.png" /></div>
+					</li>
+					<li>
+						<h3><a href="javascript:void(0);">关注“演示”，领取现金红包</a></h3>
+						<div class="source">
+							05月28日&nbsp;&nbsp;&nbsp;&nbsp;风一样的少年
+						</div>
+						<div class="msgbox">
+							<div class="img"><img src="../images/img1.jpg" /></div>
+							<p>关注“演示”公众号，回复关键词【红包】，即可领取现金红包。</p>
+						</div>
+						<div class="checked"><img src="../images/checked.png" /></div>
+					</li>
+				</ul>
+				<div class="clear space137"></div>
+				<div class="bot">
+					<div class="pages">
+						<a href="javascript:void(0);" class="prev"><i></i></a>
+						<span>2/4</span>
+						<a href="javascript:void(0);" class="next"><i></i></a>
+						<input type="text" />
+						<a href="javascript:void(0);">跳转</a>
+					</div>
+					<div class="btns">
+						<a class="done" href="javascript:void(0);">确定</a>
+						<a href="javascript:void(0);" onclick="hideMaterialHint();">取消</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bg"></div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="../js/masonry.min.js"></script>
+<script type="text/javascript">
+	//瀑布流展示
+	var $container = $('.material ul');
+	$container.imagesLoaded(function(){
+		$container.masonry({
+				itemSelector: '.material ul li'
+			});
+	});
+	//弹出授权提示
+	function showAccredit(){
+		$('body').append('<div class="accredit_hint">\
+							<em class="close" onclick="hideAccredit();">╳</em>\
+							<dl>\
+								<dt><h3>授权的条件</h3></dt>\
+								<dd>\
+									<p>1. 拥有一个微信公众号<a href="javascript:void(0);">如何申请？</a></p>\
+									<p>2. 公众号已开启安全助手<a href="javascript:void(0);">如何开启？</a></p>\
+								</dd>\
+								<dt>\
+									<div class="space_20"></div>\
+									<a class="accredit_btn" href="javascript:void(0);">去授权</a>\
+									<a onclick="hideAccredit();" href="javascript:void(0);">取消</a>\
+								</dt>\
+							</dl>\
+						</div>');
+	}
+	//隐藏授权提示
+	function hideAccredit(){
+		$('.accredit_hint').remove();
+	}
+	//新增素材
+	function showMaterialHint(){
+		$('.material_hint').css("display","block");
+		var $container1 = $('.material_hint .list ul');
+		$container1.imagesLoaded(function(){
+			$container1.masonry({
+					itemSelector: '.material_hint .list ul li'
+				});
+		});
+	}
+	//隐藏新增素材选择框
+	function hideMaterialHint(){
+		$('.material_hint').css("display","none");
+		$('.material_hint .list li').attr("class","");
+	}
+	//选中素材
+	$('.material_hint .list li').click(function(){
+		$('.material_hint .list li').attr("class","");
+		$(this).attr("class","selected");
+	});
+</script>

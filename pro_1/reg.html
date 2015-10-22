@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta http-equiv="X-UA-compatible" content="IE=edge,chrome=1" />
+		<link rel="stylesheet" type="text/css" href="./css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="./css/reg.css" />	
+		<title>Reg</title>
+		<script type="text/javascript" src="./js/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="./js/reg.js"></script>
+	</head>
+	<body>
+        <div class="head_box">
+            <div class="inner w1024">
+                <h1 class="logo">
+                    <img src="./images/logo.png" />
+                    <a href="/" title="管理平台">
+                        管理平台
+                    </a>
+                </h1>
+            </div>
+        </div>
+        <div class="content" id="body">
+           <div class="contanter">
+                <ul class="processor_bar">    
+                    <li class="step grid_item current">
+                        <h4>1 基本信息</h4>
+                    </li>                    
+                    <li class="step grid_item next">
+                        <h4>2 邮箱激活</h4>
+                    </li>                   
+                    <li class="step grid_item nnext">
+                        <h4>3 选择类型</h4>
+                    </li>                   
+                    <li class="step grid_item nnext">
+                        <h4>4 信息登记</h4>
+                    </li>               
+                    <li class="step grid_item nnext">
+                        <h4>5 公众号信息</h4>
+                    </li>                   
+                </ul>
+                <div class="info_box">
+                    <div class="form_wrp">
+                        <form class="form" id="registerStep1">
+                            <fieldset class="frm_fieldset">
+                                <div class="frm_title mini_tips">
+                                    <i class="icon_msg_mini info"></i>每个邮箱仅能申请一种帐号：服务号、订阅号或企业号
+                                </div>
+                                <div class="frm_control_group">
+                                    <label for="" class="frm_label">邮箱</label>
+                                    <div class="frm_controls">
+                                        <span class="frm_input_box">
+                                            <input name="email" id="js_email" type="text" placeholder="" class="frm_input">
+                                        </span>
+                                        <p class="frm_tips">
+                                            作为登录帐号，请填写未被微信公众平台注册，未被微信开放平台注册，未被个人微信号绑定的邮箱
+                                        </p>
+                                    </div>
+                                </div>                 
+                                <div class="frm_control_group">
+                                    <label for="" class="frm_label">密码</label>
+                                    <div class="frm_controls">
+                                        <span class="frm_input_box">
+                                            <input name="pw1" id="pw1" type="password" placeholder="" autocomplete="off" class="frm_input" onpaste="return false">
+                                        </span>
+                                         <p class="frm_tips">
+                                            字母、数字或者英文符号，最短6位，区分大小写
+                                        </p>
+                                    </div>
+                                </div>                   
+                                <div class="frm_control_group">
+                                    <label for="" class="frm_label">确认密码</label>
+                                    <div class="frm_controls">
+                                        <span class="frm_input_box">
+                                            <input name="pw2" id="pw2" type="password" placeholder="" autocomplete="off" class="frm_input" onpaste="return false">
+                                        </span>
+                                        <p class="frm_tips">
+                                            请再次输入密码
+                                        </p>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="tool_bar border with_form">
+                                <span class="btn btn_disabled btn_primary btn_input">
+                                    <button id="js_nextBtn" type="submit" class="" disabled="">
+                                        注册
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="tips_show">
+                    <p>
+                        已有帐号？
+                        <a href="/">
+                            立即登录
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div> 
+        <div class="foot" id="footer">
+            <ul class="links">
+                <li class="links_item no_extra">
+                    <a href="#" target="_blank">
+                        关于我们
+                    </a>
+                </li>
+                <li class="links_item">
+                    <a href="#" target="_blank">
+                        服务协议
+                    </a>
+                </li>
+                <li class="links_item">
+                    <a href="#" target="_blank">
+                        运营规范
+                    </a>
+                </li>
+                <li class="links_item">
+                    <a href="#" target="_blank">
+                        客服中心
+                    </a>
+                </li>
+                <li class="links_item">
+                    <a href="#" target="_blank">
+                        联系邮箱
+                    </a>
+                </li>
+                <li class="links_item">
+                    <a href="#" target="_blank">
+                        侵权投诉
+                    </a>
+                </li>
+                <li class="links_item">
+                    <p class="copyright">
+                        Copyright © 2015 Test. All Rights Reserved.
+                    </p>
+                </li>
+            </ul>
+        </div>
+	</body>
+</html>

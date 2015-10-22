@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="889px" height="548px" viewBox="0 0 889 548" enable-background="new 0 0 889 548" xml:space="preserve">
+<rect fill="#202B33" width="889" height="548"/>
+<g>
+	<circle fill="#FFFFFF" cx="44.703" cy="32.5" r="6.703"/>
+	<circle fill="#FFFFFF" cx="71.516" cy="32.5" r="6.703"/>
+	<circle fill="#FFFFFF" cx="98.328" cy="32.5" r="6.703"/>
+</g>
+<path fill="none" d="M-36,557"/>
+<path fill="none" stroke="#4D4D4D" stroke-width="2" stroke-miterlimit="10" d="M789,567"/>
+<path fill="none" stroke="#4D4D4D" stroke-width="2" stroke-miterlimit="10" d="M-38,567"/>
+<path fill="none" stroke="#4D4D4D" stroke-width="2" stroke-miterlimit="10" d="M62,325.333"/>
+<path fill="none" stroke="#4D4D4D" stroke-width="2" stroke-miterlimit="10" d="M-29,575"/>
+<rect x="42" y="174" fill="#3C5059" width="212" height="52"/>
+<rect x="288" y="118" fill="#212327" width="560" height="391"/>
+<rect x="320" y="148" fill="none" width="512" height="354"/>
+<text transform="matrix(1 0 0 1 320 165.2012)"><tspan x="0" y="0" fill="#F90066" font-family="'Consolas'" font-size="21">name</tspan><tspan x="0" y="25.2" fill="#F2F2F2" font-family="'Consolas'" font-size="21" letter-spacing="24">	</tspan><tspan x="36" y="25.2" fill="#45BC00" font-family="'Consolas'" font-size="21">“&lt;name&gt;”</tspan><tspan x="0" y="75.6" fill="#F90066" font-family="'Consolas'" font-size="21">description</tspan><tspan x="0" y="100.8" fill="#F2F2F2" font-family="'Consolas'" font-size="21" letter-spacing="24">	</tspan><tspan x="36" y="100.8" fill="#45BC00" font-family="'Consolas'" font-size="21">“&lt;description&gt;”</tspan><tspan x="0" y="151.2" fill="#F90066" font-family="'Consolas'" font-size="21">if</tspan><tspan x="0" y="176.399" fill="#F2F2F2" font-family="'Consolas'" font-size="21" letter-spacing="24">	</tspan><tspan x="36" y="176.399" fill="#8037F4" font-family="'Consolas'" font-size="21">region</tspan><tspan x="105.275" y="176.399" fill="#F2F2F2" font-family="'Consolas'" font-size="21">.</tspan><tspan x="116.821" y="176.399" fill="#8037F4" font-family="'Consolas'" font-size="21">instance</tspan><tspan x="209.188" y="176.399" fill="#F2F2F2" font-family="'Consolas'" font-size="21">(role </tspan><tspan x="278.464" y="176.399" fill="#F90066" font-family="'Consolas'" font-size="21">=</tspan><tspan x="290.01" y="176.399" fill="#F2F2F2" font-family="'Consolas'" font-size="21"> </tspan><tspan x="301.556" y="176.399" fill="#45BC00" font-family="'Consolas'" font-size="21">“db”</tspan><tspan x="347.739" y="176.399" fill="#F2F2F2" font-family="'Consolas'" font-size="21">, eip </tspan><tspan x="417.015" y="176.399" fill="#F90066" font-family="'Consolas'" font-size="21">!=</tspan><tspan x="440.106" y="176.399" fill="#F2F2F2" font-family="'Consolas'" font-size="21"> </tspan><tspan x="451.652" y="176.399" fill="#45BC00" font-family="'Consolas'" font-size="21">“”</tspan><tspan x="474.744" y="176.399" fill="#F2F2F2" font-family="'Consolas'" font-size="21">)</tspan><tspan x="0" y="226.8" fill="#F90066" font-family="'Consolas'" font-size="21">do</tspan><tspan x="0" y="252" fill="#F2F2F2" font-family="'Consolas'" font-size="21" letter-spacing="24">	</tspan><tspan x="36" y="252" fill="#158DF9" font-family="'Consolas'" font-size="21">email</tspan><tspan x="93.729" y="252" fill="#F2F2F2" font-family="'Consolas'" font-size="21">()</tspan></text>
+<rect x="98" y="118" fill="#004C1F" width="156" height="39"/>
+<rect x="41" y="118" fill="#004C1F" width="42" height="39"/>
+<rect x="87" y="193" fill="none" width="61" height="27"/>
+<text transform="matrix(1 0 0 1 87 206.6875)" fill="#B3B3B3" font-family="'Roboto-Light'" font-size="16">RULE</text>
+<rect x="58" y="194" fill="#777777" width="15" height="15"/>
+<circle fill="#00A585" cx="226.5" cy="200.5" r="9.5"/>
+<rect x="42" y="244" fill="#2E3D42" width="212" height="52"/>
+<rect x="42" y="314" fill="#2E3D42" width="212" height="52"/>
+<rect x="42" y="385" fill="#2E3D42" width="212" height="52"/>
+<rect x="42" y="457" fill="#2E3D42" width="212" height="52"/>
+</svg>

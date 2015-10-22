@@ -1,0 +1,105 @@
+body{
+	font:12px/1.5em  "宋体",sans-serif;
+}
+.a{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.a a{
+	height: 32px;
+	width: 80px;
+	margin-top: 200px;
+	display: inline-block;
+	border:2px solid #fa0;
+	border-radius: 5px;
+	text-align: center;
+	font:bold 5px/30px "黑体";
+	color: white;
+	text-decoration: none;
+	background: #aaa;
+}
+
+.btn{
+	display:block;
+	/*position:absolute;top:0;left:0;z-index:0;*/
+	width:80px;height:30px;
+	margin:10px auto;/*padding:10px;*/
+	border:1px solid #f80;border-radius:3px;
+	font:16px/30px "微软雅黑";text-align:center;text-decoration:none;
+	background:#fa0;color:#fff;
+}
+.btn:hover{
+	background:#f80;
+	cursor:pointer;
+}
+
+.imgbtn,.imgbtn1{
+	display:block;
+	/*position:absolute;top:0;left:0;z-index:0;*/
+	width:103px;height:37px;
+	margin:10px auto;/*padding:10px;*/
+	/*border:1px solid #f80;border-radius:3px;*/
+	font:16px/37px "微软雅黑";text-align:center;text-decoration:none;
+	color:#fff;background:url(../images/bg.png) no-repeat -190px -191px;
+}
+.imgbtn:hover,.imgbtn1:hover{
+	background-position: -87px -191px;
+	cursor:pointer;
+}
+
+
+.imgbtn1{
+	color:#f00;
+}
+/*p.pp{
+	color:#f00;
+}*/
+
+.pp{
+	color:#000;
+}
+.pp.ppp,.aa{
+	color:#00f;
+
+}
+
+p{
+	color:#fa0;
+}
+
+/*#pp{
+	color:#0ff;
+}*/
+
+div.ddd ul #ss p.pp{
+	color:#f0f;
+}
+
+.ddd>.pp{
+	color:#000;
+}
+
+.url:link{
+	color:#f00;
+}
+.url:visited{
+	color:#ff0;
+}
+.url:hover{
+	color:#0f0;
+}
+.url:active{
+	color:#00f;
+}
+
+.ul .pp1{
+	color:#f0f;
+}
+
+.pp2{
+	display: none;
+}
+.pp2:hover{
+	display: block;
+}

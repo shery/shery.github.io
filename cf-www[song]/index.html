@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=1">
+        <meta name="keywords" content="cloudfielder, cloud, policy, violation, analysis, rule, alert">
+        <meta name="description" content="Policy as a Service, for your cloud infrastructure">
+        <link rel="stylesheet" href="index.css">
+        <title>CloudFielder</title>
+    </head>
+    <body>
+        <article class="container">
+            <header>
+                <a class="logo item" href="/"></a>
+                <nav>
+                    <a class="item" href="https://doc.cloudfielder.com/" target="_blank">DOC</a>
+                    <a class="item" href="https://www.visualops.io/about/" target="_blank">ABOUT</a>
+                    <span class="sign item">
+                        <a href="https://ide.cloudfielder.com/login/" target="_blank">SIGNIN</a> /
+                        <a href="https://ide.cloudfielder.com/register/" target="_blank">SIGNUP</a>
+                    </span>
+                </nav>
+                <a class="vo-logo item" href="https://www.visualops.io/" target="_blank"></a>
+            </header>
+            <section class="title">
+                <img class="logo" src="images/logo.png" />
+                <div class="subtitle">Policy as a Service, for your cloud infrastructure</div>
+                <div class="code"><span id="typing">if <span class="light res">region</span>.<span class="res">instance</span>(<span class="attr">role</span> = <span class="val">“db”</span>, <span class="attr">type</span> = <span class="val">“public”</span>)​​ do <span class="act">email</span>() </span><span id="cursor">_</span></div>
+            </section>
+            <section class="intro-list">
+                <div class="intro">
+                    <div class="title"><span class="normal">Define </span><span class="light green">Policy Rules</span><span class="normal"> for your Cloud Infrastructure</span></div>
+                    <div class="subtitle">Effective policy rule syntax and editor</div>
+                    <img class="img" src="images/img1.svg" />
+                </div>
+                <div class="intro">
+                    <div class="title"><span class="normal">Simply apply the rules to  </span><span class="light purple">monitor</span><span class="normal"> your Cloud Infrastructure</span></div>
+                    <div class="subtitle">Proactive analyze exist violations possibly</div>
+                    <img class="img" src="images/img2.svg" />
+                </div>
+                <div class="intro">
+                    <div class="title"><span class="normal">Instant </span><span class="light red">Alert</span><span class="normal"> in case of any Policy Violation</span></div>
+                    <div class="subtitle">Audit the history of policy & violations</div>
+                    <img class="img" src="images/img3.svg" />
+                </div>
+                <div class="intro">
+                    <div class="title"><span class="normal">Find out What Went Wrong </span><span class="light orange">Visually</span></div>
+                    <div class="subtitle">Visualize analyze violation trend</div>
+                    <img class="img" src="images/img4.svg" />
+                </div>
+            </section>
+            <section class="last">
+                <a class="signup" href="https://ide.cloudfielder.com/register/" target="_blank">SIGN UP FREE NOW</a>
+                <div class="logo"><img src="images/logo.png" /></div>
+            </section>
+            <footer>
+                <section class="copyright">
+                    <div>© MadeiraCloud 2015 | <a href="https://www.visualops.io/terms-conditions-privacy-policy/" target="_blank"> Terms, Conditions and Privacy Policy</a></div>
+                    <div>795 Folsom St, San Francisco, CA, USA.</div>
+                </section>
+                <a class="vo-logo" href="https://www.visualops.io/" target="_blank"></a>
+            </footer>
+        </article>
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function(event) {
+                setTimeout(function() {
+                    document.getElementById('typing').className = 'active';
+                    setTimeout(function() {
+                        document.getElementById('cursor').className = 'active';
+                    }, 3000);
+                }, 500);
+            });
+        </script>
+    </body>
+</html>

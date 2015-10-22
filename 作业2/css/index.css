@@ -1,0 +1,492 @@
+body {
+	padding-bottom: 40px;
+	background: #F2F9FF;
+}
+/* tool */
+.w1024 {
+	width:1024px;
+	margin:0 auto;
+}
+.w1084 {
+	width: 1084px;
+	margin: 0 auto;
+}
+.container {
+	background: #fff;
+}
+.cont {
+	padding-bottom: 60px;
+}
+/*head*/
+.head {
+	height: 170px;
+	/*background: #fa0;*/
+}
+.head .logo {
+	float: left;
+}
+.head .logo img {
+	width: 174px;height: 90px;
+	margin: 40px 0;
+}
+.head .right {
+	float: right;
+	width: 346px;
+	margin: 40px 0;
+}
+.right .serch {
+	float: right;
+}
+.right .serch input {
+	float: right;
+	width: 194px;height: 42px;
+	border: 1px solid #555;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.right .serch select {
+	float: right;
+	width: 88px;height: 44px;
+	border: 1px solid #555;
+	border-left: none;
+}
+.right .serch a {
+ 	float: right;
+	width: 44px;height: 44px;
+	background: #32B2C3;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.right .serch a img {
+	width: 16px;height: 16px;
+	margin: 14px;
+}
+.right .icons {
+	float: right;
+	margin-top: 22px;
+}
+.right .icons img {
+	float: right;
+	width: 24px;height: 24px;
+	margin-left: 10px
+}
+/*.right .icons i {
+	float: right;
+	width: 25px;height: 25px;
+	background:url(../images/icons.png) no-repeat 0 0;
+}
+.right .icons i.tw {
+	background-position: 0 -50px;
+}
+.right .icons i.ls {
+	background-position: 0 -100px;
+}
+.right .icons i.gg {
+	background-position: 0 -150px;
+}
+.right .icons i.sina {
+	background-position: 0 -200px;
+}
+.right .icons i.qq {
+	background-position: 0 -250px;
+}*/
+
+/*nav*/
+.nav {
+	width: 100%;
+	background: #FAFAFA;
+	font: bold 16px/50px "微软雅黑";
+}
+.navbar .left {
+	float: left;
+}
+.navbar .right {
+	float: right;
+	
+
+}
+.navbar .left a {
+	margin-right: 20px;
+}
+.navbar .right a {
+	margin-left: 20px;
+	color: #32B2D5;
+}
+.ban1 {
+	margin-top: 40px;
+	/*padding-bottom: 40px;*/
+	background: url(../images/ban.jpg) no-repeat -102px -60px;
+	text-align: center;
+}
+/*.ban1 .tags {
+	text-align: center;
+	padding-top: 150px;
+}*/
+.ban1 a{
+	display: inline-block;
+	height: 70px;
+	color: #fff;
+	font: bold 32px/70px "微软雅黑";
+	text-align: center;
+	border-radius: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-right: 12px;
+	margin-top: 150px;
+}
+.ban1 .org {
+	background: #FA4408;
+}
+.ban1 .gre {
+	background: #00C9A1;
+}
+.ban1 .blu {
+	background: #35A5E6;
+}
+.ban1 p {
+	font: bold 28px/70px "微软雅黑";
+	text-align: center;
+	margin-top: 50px;
+	padding-bottom: 80px;
+}
+
+/*content*/
+.content {
+	margin-top: 40px;
+}
+.content .left {
+	width: 68%;
+	float: left;
+}
+.content .right {
+	width: 28%;
+	float: right;
+}
+/*左侧部分*/
+.content a.title {
+	display: block;
+	width: 100%;
+	height: 52px;
+	color: #fff;
+	font: bold 20px/52px "微软雅黑";
+	text-align: center;
+	background: #32B2C3;
+	border-radius: 5px;
+}
+.content .left .obs {
+	margin-bottom: 50px;
+}
+.content .left .obs dd {
+	width: 48%;
+	float: left;
+	margin-top: 26px;
+	margin-right: 4%;
+}
+.content .left .obs dd:nth-child(2n) {
+	margin-right: 0;
+}
+.content .left .obs dd img {
+	width: 100%;
+}
+.content .left h3 {
+	font: bold 16px/40px "微软雅黑";
+	color: #C34A32;
+}
+.content .left h4 {
+	font: bold 16px/26px "微软雅黑";
+	color: #000;
+}
+.content .left p {
+	height: 30px;
+	font: bold 12px/12px "微软雅黑";
+	color: #CFD1D2;
+	border-bottom: 1px solid #CFD1D2;
+}
+.obs a {
+	display: block;
+	width: 100%;
+	height: 48px;
+	color: #878888;
+	font: bold 18px/48px "微软雅黑";
+	text-align: center;
+	background: #FAFAFA;
+	border-radius: 5px;
+	margin-top: 36px;	
+}
+.content .left .swc {
+	margin-bottom: 50px;
+}
+.content .left .swc dd {
+	width: 30%;
+	float: left;
+	margin-top: 26px;
+	margin-right: 5%;
+}
+.content .left .swc dd:nth-child(3n) {
+	margin-right: 0;
+}
+.content .left .swc dd img {
+	width: 100%;
+}
+.content .left .swc h3 {
+	line-height: 20px;
+	margin-top: 20px;
+}
+.content .left .swp {
+	margin-bottom: 50px;	
+}
+/*.content .left .swp ul {
+	margin-top: 20px;
+}*/
+.content .left .swp li {
+	padding: 30px 0;
+	border-bottom: 1px solid #CFD1D2;
+}
+.content .left .swp .swpa {
+	float: left;
+	width: 120px;height: 120px;
+}
+.content .left .swp img {
+	width: 100px;
+	float: left;
+	border-radius: 5px;
+}
+.content .left .swp h2 {
+	font: bold 30px/30px "微软雅黑";
+	color: #CD3837;
+}
+.content .left .swp i {
+	height: 30px;
+	font: bold 12px/30px "微软雅黑";
+	color: #CFD1D2;
+}
+.content .left .swp p {
+	height: 90px;
+	font: bold 16px/16px "微软雅黑";
+	line-height: 20px;
+	border: none;
+}
+.content .left .swp span {
+	color: #CD3837;
+}
+.content .left .swp .swp_a  a {
+	display: inline-block;
+	padding: 4px;
+	color: #fff;
+	border-radius: 5px;
+	background: #86A6AD;
+}
+.content .left .groups .groupsa {
+	display: inline-block;
+	font: bold 12px/30px "微软雅黑";
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.content .left .groups dl {
+	float: left;
+	height: 100px;
+	margin-right: 4%;
+	margin-bottom: 20px;
+	width: 30%;
+	border: 1px solid #CFD1D2;
+}
+.content .left .groups dl:nth-child(3n) {
+	margin-right: 0;
+}
+.content .left .groups dt {
+	float: left;
+	width: 52%;
+}
+.content .left .groups dd {
+	float: left;
+	width: 48%;
+}
+.content .left .groups dt img {
+	width: 100px;
+}
+
+.content .left .groups dd h3 {
+	color: #000;
+}
+.content .left .groups dd p {
+	border: none;
+}
+/*右侧部分*/
+.content .right h2 {
+	font: bold 20px/20px "微软雅黑";
+	margin-bottom: 20px;
+}
+.content .right .edi dt {
+	float: left;
+	width: 24%;
+}
+.content .right .edi img {
+	width: 50px;height: 50px;
+	border-radius: 5px;
+}
+.content .right .edi dd {
+	float: left;
+	width: 76%;
+	padding-bottom: 16px;
+}
+.content .right .edi dd h3 {
+	font: bold 12px/12px "微软雅黑"; 
+	color: #C34A32;
+}
+.content .right dd h4 {
+	font: bold 12px/20px "微软雅黑";
+}
+.content .right dd p {
+	font-size: 10px;
+	font-family: "微软雅黑";
+	color: #CFD1D2;
+}
+.content .right .edi a {
+	display: block;
+	margin-top: 20px;
+	width: 100%;height: 48px;
+	font: bold 12px/48px "微软雅黑";
+	color: #96928C;
+	background: #FAFAFA;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.content .right .mem {
+	margin-top: 40px;
+	margin-bottom: 70px;
+}
+.content .right .mem a {
+	display: inline-block;
+	font: bold 12px/12px "微软雅黑";
+	margin-bottom: 20px;
+}
+.content .right .mem a:hover {
+	text-decoration: underline;
+}
+.content .right .mem dt {
+	float: left;
+	width: 20%;
+}
+.content .right .mem img {
+	width: 48px;height: 48px;
+	border-radius: 5px;
+}
+.content .right .mem dd {
+	float: left;
+	width: 80%;
+	padding-bottom: 16px;
+}
+.content .right .site dt {
+	float: left;
+	width: 18%;
+}
+.content .right .site img {
+	width: 40px;height: 40px;
+	border-radius: 5px;
+}
+.content .right .site dd {
+	float: left;
+	width: 82%;
+	padding-bottom: 16px;
+}
+.content .right .site dd p {
+	font: bold 12px/16px "微软雅黑"；
+}
+.content .right .site dd p span {
+	color: #C34348;
+}
+
+.content .right .rec p {
+	color: #CFD1D2;
+	margin-bottom: 20px;
+}
+.content .right .rec p span {
+	color: #C34348;
+}
+
+.content .right .rec p img {
+	height: 16px;
+}
+
+.content .right .adv img {
+	width: 100%;
+}
+.content .right .adv p {
+	font: bold 12px/26px "微软雅黑";
+	color: #CFD1D2;
+}
+.content .right .adv span {
+	color: #646262;
+}
+/*页脚样式*/
+.container .foot {
+	padding-top: 40px;
+	padding-bottom: 20px;
+	background: #FCFCFC;
+}
+.foot .footer {
+	margin-bottom: 20px;
+}
+.footer .left {
+	float: left;
+	width: 30%;
+	margin-right: 4%;
+}
+.footer h2 {
+	font: bold 20px/60px "微软雅黑";
+}
+.footer .left p {
+	text-align: left;
+	color: #646262;
+	font: normal 16px/20px "微软雅黑";
+}
+.footer .mid {
+	float: left;
+	width: 32%;
+	margin-right: 4%;
+}
+.footer .mid dt {
+	float: left;
+	width: 26%;
+	height: 64px;
+	margin-bottom: 20px;
+}
+.footer .mid dt img {
+	float: left;
+	width: 64px;
+}
+.footer .mid dd {
+	float: left;
+	width: 74%;
+	height: 64px;
+	margin-bottom: 20px;
+}
+.footer .mid dd h3 {
+	font: bold 16px/16px "微软雅黑";
+	color: #C34A32;
+}
+.footer .mid dd h4 {
+	font: bold 14px/30px "微软雅黑";
+}
+.footer .right {
+	float: left;
+	width: 30%;
+}
+.footer .right a {
+	display: block;
+	font: normal 16px/16px "微软雅黑";
+	color: #C34A32;
+	margin-bottom: 20px;
+}
+.footer .right a span {
+	color: #646262;
+}
+.foot p {
+	text-align: center;
+	color: #646262;
+	font: bold 12px/20px "微软雅黑";
+}
+.foot p a {
+	color: #C34A32;
+}

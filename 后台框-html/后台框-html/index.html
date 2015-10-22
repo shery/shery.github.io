@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>index</title>
+<link rel="stylesheet" href="css/basic.css">
+<link rel="stylesheet" href="css/iconfont.css">
+<link rel="stylesheet" href="css/trms.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/rms.js"></script>
+</head>
+<body>
+    <div class="head">
+        <div class="fl logo"><img src="images/logo1.png"></div>
+        <div class="fl project">
+            <a class="headpulldown">
+                <i class="iconfont icon-file"></i>
+                <span>
+                    项目名称,长短随意
+                </span>
+                <i class="iconfont icon-arrowdown"></i>
+            </a>
+            <ul>
+                <li><a data-id="pr1">这是项目一：名称</a></li>
+                <li><a data-id="pr2">这是项目二：名称</a></li>
+                <li><a data-id="pr3">这是项目三：名称</a></li>
+            </ul>
+        </div>
+        <div class="fr set">
+            <a class="info"><i class="iconfont icon-infor"></i></a>
+            <a class="help"><i class="iconfont icon-help"></i></a>
+            <a class="exit"><i class="iconfont icon-logout"></i></a>
+        </div>
+        <div class="fr user">
+            <a class="users headpulldown">
+                <i class="iconfont icon-user"></i>
+                <span>这是用户名,长短随意</span>
+                <em></em>
+            </a>
+            <ul>
+                <li><a>这是角色一：名称</a></li>
+                <li><a>这是角色二：名称</a></li>
+                <li><a>这是角色三：名称</a></li>
+            </ul>
+            <a class="userset">
+                <i class="iconfont icon-set"></i>
+            </a>
+        </div>
+        <div class="fr set">
+            <a class="full"><i class="iconfont icon-full"></i></a>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="body">
+        <div class="nav">
+            <div class="search">
+                <form class="search_box">
+                    <div class="submitbtn">
+                        <i class="iconfont icon-search"></i>
+                        <input type="submit" value=" " />
+                    </div>
+                    <input type="text" />
+                </form>
+            </div>
+            <dl class="searchresult">
+                <dt onclick="rms.ui.cleansearch(this)"><i class="iconfont icon-close"></i></dt>
+                <dd><a href="#">搜索结果</a></dd>
+                <dd><a href="#">搜索结果</a></dd>
+                <dd><a href="#">搜索结果</a></dd>
+            </dl>
+            <ul id="navlist"></ul>
+            <!-- <ul id="navlist">
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-arrowright"></i> 
+                        <em class="iconfont icon-home"></em>
+                        <span>首页</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-arrowright"></i> 
+                                <span>儿子栏目</span>
+                            </a>
+                            <ul>
+                                <li><a onclick="return rms.ui.changeurl(this)" href="h3.html"><em>●</em>孙子栏目</a></li>
+                                <li><a href="h1.html"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>儿子栏目</span></a></li>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-arrowright"></i>
+                                <span>儿子栏目</span>
+                            </a>
+                            <ul>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>儿子栏目</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-arrowright"></i>
+                        <em class="iconfont icon-plugin"></em>
+                        <span>插件管理</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-arrowright"></i> 
+                                <span>儿子栏目</span>
+                            </a>
+                            <ul>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>儿子栏目</span></a></li>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-arrowright"></i>
+                                <span>儿子栏目</span>
+                            </a>
+                            <ul>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>儿子栏目</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-arrowright"></i>
+                        <em class="iconfont icon-cont"></em>
+                        <span>内容设置</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-arrowright"></i> 
+                                <span>儿子栏目</span>
+                            </a>
+                            <ul>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>儿子栏目</span></a></li>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-arrowright"></i>
+                                <span>儿子栏目</span>
+                            </a>
+                            <ul>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>儿子栏目</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-arrowright"></i>
+                        <em class="iconfont icon-order"></em>
+                        <span>订单管理</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-arrowright"></i> 
+                                <span>儿子栏目</span>
+                            </a>
+                            <ul>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>儿子栏目</span></a></li>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-arrowright"></i>
+                                <span>儿子栏目</span>
+                            </a>
+                            <ul>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>儿子栏目</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-arrowright"></i>
+                        <em class="iconfont icon-useredit"></em>
+                        <span>用户管理</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-arrowright"></i> 
+                                <span>儿子栏目</span>
+                            </a>
+                            <ul>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>儿子栏目</span></a></li>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-arrowright"></i>
+                                <span>儿子栏目</span>
+                            </a>
+                            <ul>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>儿子栏目</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-arrowright"></i>
+                        <em class="iconfont icon-gold"></em>
+                        <span>收益管理</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-arrowright"></i> 
+                                <span>儿子栏目</span>
+                            </a>
+                            <ul>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>儿子栏目</span></a></li>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-arrowright"></i>
+                                <span>儿子栏目</span>
+                            </a>
+                            <ul>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>儿子栏目</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-arrowright"></i>
+                        <em class="iconfont icon-activity"></em>
+                        <span>活动管理</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-arrowright"></i> 
+                                <span>儿子栏目</span>
+                            </a>
+                            <ul>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>儿子栏目</span></a></li>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-arrowright"></i>
+                                <span>儿子栏目</span>
+                            </a>
+                            <ul>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>儿子栏目</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-arrowright"></i>
+                        <em class="iconfont icon-audit"></em>
+                        <span>审核</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-arrowright"></i> 
+                                <span>儿子栏目</span>
+                            </a>
+                            <ul>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>儿子栏目</span></a></li>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-arrowright"></i>
+                                <span>儿子栏目</span>
+                            </a>
+                            <ul>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>儿子栏目</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-arrowright"></i>
+                        <em class="iconfont icon-users"></em>
+                        <span>帐号管理</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-arrowright"></i> 
+                                <span>儿子栏目</span>
+                            </a>
+                            <ul>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>儿子栏目</span></a></li>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont icon-arrowright"></i>
+                                <span>儿子栏目</span>
+                            </a>
+                            <ul>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                                <li><a href="#"><em>●</em>孙子栏目</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><span>儿子栏目</span></a></li>
+                    </ul>
+                </li>
+            </ul> -->
+            <div class="flex" id="foldnav">
+                <em class="flexbtn iconfont icon-arrowleft1"></em>
+            </div>
+        </div>
+        <div class="main">
+            <div class="state">
+                <em class="fl iconfont icon-refresh" onclick="rms.ui.refresh()"></em>
+                <div class="crumbs">
+                    <span>首页</span><em></em><span></span><em></em><span></span>
+                </div>
+                <div class="changeskin">
+                    <em id="foldskin" class="flexbtn iconfont icon-set"></em>
+                    <dl>
+                        <dd data-bg="bb0000"><em class="iconfont icon-done"></em></dd>
+                        <dd data-bg="ff9900"><em class="iconfont icon-done"></em></dd>
+                        <dd data-bg="ccad00"><em class="iconfont icon-done"></em></dd>
+                        <dd data-bg="24a65a"><em class="iconfont icon-done"></em></dd>
+                        <dd data-bg="318ecc"><em class="iconfont icon-done"></em></dd>
+                        <dd data-bg="8f7ecc"><em class="iconfont icon-done"></em></dd>
+                        <dd data-bg="3a3633" class="active"><em class="iconfont icon-done"></em></dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="cont"><iframe id="iframeid"></iframe></div>
+            <div class="foot">
+                <div class="fl copyright">
+                    Copyright © 2014 www.tchajian.com All Rights Reserved 有戏（厦门）网络科技有限公司版权所有 闽ICP备14019370号
+                </div>
+            </div>
+            <em id="foldfoot" class="footflexbtn iconfont icon-arrowdown1"></em>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+$(function(){
+    //全屏切换
+    $('.full').toggle(function(){
+        rms.ui.fullscreen();
+        $(this).find('i').attr("class","iconfont icon-unfull");
+    },function(){
+        rms.ui.exitfullscreen();
+        $(this).find('i').attr("class","iconfont icon-full");
+    });
+
+    //头部下拉弹出
+    $('.headpulldown').click(function(){
+        var obj = $(this);
+        obj.next().slideToggle(200);
+        obj.next().find('a').click(function(){
+            var id_forqiuling = rms.ui.selectreturn($(this)).id;
+            obj.find('span').text(rms.ui.selectreturn($(this)).value);
+            //obj.next().slideUp(200);
+        });
+        obj.next().click(function(){
+            obj.next().slideUp(200);
+        });
+    });
+
+
+    //导航状态记录
+    var navstate = 1;
+    //导航下拉
+    $(document).on("click",".nav a",function(){
+        //如果导航已收起则展开
+        if(navstate == 0){
+            navstate = rms.ui.navunfold($('#foldnav'));
+        }
+        //下拉选项(如果该选项已经下拉则不再次下拉)
+        if($(this).parent().attr("class") != "active"){
+            $(this).parent().parent().find('li').attr("class","");
+            $(this).parent().attr("class","active");
+            $(this).parent().parent().find('ul').slideUp(200);
+            $(this).next().slideDown(200);
+        }
+
+        //更新面包屑
+        if($(this).parent().parent().attr("id") == "navlist"){
+            $('.crumbs span,.crumbs em').text('');
+            $('.crumbs span').eq(0).text($(this).find('span').text());
+        }else if($(this).parent().parent().parent().parent().attr("id") == "navlist"){
+            $('.crumbs span:nth-child(n+2),.crumbs em:nth-child(n+1)').text('');
+            $('.crumbs em').eq(0).text('>');
+            $('.crumbs span').eq(1).text($(this).find('span').text());
+        }else{
+            $('.crumbs em').eq(1).text('>');
+            $('.crumbs span').eq(2).text($(this).find('span').text());
+        }
+
+    });
+    //导航伸缩
+    $('#foldnav').click(function(){
+        if(navstate == 1){
+           navstate = rms.ui.navfold($(this));
+        }else{
+           navstate = rms.ui.navunfold($(this));
+        }
+    });
+
+
+    //底部伸缩
+    $('#foldfoot').toggle(function(){
+        $('#foldfoot').attr("class","footflexbtn iconfont icon-arrowup1");
+        $(this).prev().slideToggle(200);
+    },function(){
+        $('#foldfoot').attr("class","footflexbtn iconfont icon-arrowdown1");
+        $(this).prev().slideToggle(200);
+    });
+
+
+    //换肤伸缩
+    $('#foldskin').toggle(function(){
+        var foldbtn = $(this);
+        foldbtn.parent().animate({right:"0"},200,function(){
+            foldbtn.attr("class","flexbtn iconfont icon-close");
+        });
+    },function(){
+        var foldbtn = $(this);
+        foldbtn.parent().animate({right:"-205px"},200,function(){
+            foldbtn.parent().removeAttr("style");
+            foldbtn.attr("class","flexbtn iconfont icon-set");
+        });
+    });
+
+    //换肤
+    $('.changeskin dd').click(function(){
+        $(this).parent().find('em').attr("style","display:none;");
+        $(this).find('em').attr("style","display:block;");
+        var clo = $(this).attr("data-bg");
+        $('.nav,.state,.foot').css("background","#"+clo);
+    });
+
+    //导航数据
+    var navdata = [
+        {
+            "icon"  : "icon-home",
+            "title" : "首页",
+            "href"  : "h1.html",
+            "child" : ""
+        },
+        {
+            "icon"  : "icon-plugin",
+            "title" : "插件管理",
+            "href"  : "",
+            "child" : [
+                {
+                    "title" : "新增插件",
+                    "href"  : "h2.html",
+                    "child" : ""
+                },
+                {
+                    "title" : "编辑插件信息",
+                    "href"  : "",
+                    "child" : [
+                        {
+                            "title" : "三级标题",
+                            "href"  : "h3.html",
+                            "child" : ""
+                        },
+                        {
+                            "title" : "三级标题",
+                            "href"  : "h3.html",
+                            "child" : ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "icon"  : "icon-cont",
+            "title" : "内容设置",
+            "href"  : "",
+            "child" : [
+                {
+                    "title" : "入驻品牌",
+                    "href"  : "h2.html",
+                    "child" : ""
+                },
+                {
+                    "title" : "活动推荐",
+                    "href"  : "",
+                    "child" : [
+                        {"title" : "三级菜单","href" : "h3.html"},
+                        {"title" : "三级菜单","href" : "h3.html"},
+                        {"title" : "三级菜单","href" : "h3.html"}
+                    ]
+                },
+                {
+                    "title" : "经典案例",
+                    "href"  : "h2.html",
+                    "child" : ""
+                },
+                {
+                    "title" : "插件推荐",
+                    "href"  : "",
+                    "child" : [
+                        {"title" : "三级菜单","href" : "h3.html"},
+                        {"title" : "三级菜单","href" : "h3.html"},
+                        {"title" : "三级菜单","href" : "h3.html"}
+                    ]
+                },
+                {
+                    "title" : "常见问题",
+                    "href"  : "",
+                    "child" : [
+                        {"title" : "三级菜单","href" : "h3.html"},
+                        {"title" : "三级菜单","href" : "h3.html"},
+                        {"title" : "三级菜单","href" : "h3.html"}
+                    ]
+                },
+                {
+                    "title" : "关于我们",
+                    "href"  : "",
+                    "child" : [
+                        {"title" : "三级菜单","href" : "h3.html"},
+                        {"title" : "三级菜单","href" : "h3.html"},
+                        {"title" : "三级菜单","href" : "h3.html"}
+                    ]
+                },
+                {
+                    "title" : "联系我们",
+                    "href"  : "h2.html",
+                    "child" : ""
+                }                
+            ]
+        },
+        {
+            "icon"  : "icon-order",
+            "title" : "订单管理",
+            "href"  : "h1.html",
+            "child" : ""
+        },
+        {
+            "icon"  : "icon-useredit",
+            "title" : "用户管理",
+            "href"  : "h1.html",
+            "child" : ""
+        },
+        {
+            "icon"  : "icon-gold",
+            "title" : "收益管理",
+            "href"  : "",
+            "child" : [
+                {
+                    "title" : "提现记录",
+                    "href"  : "h2.html",
+                    "child" : ""
+                },
+                {
+                    "title" : "收益月表",
+                    "href"  : "",
+                    "child" : [
+                        {"title" : "三级菜单","href" : "h3.html"},
+                        {"title" : "三级菜单","href" : "h3.html"},
+                        {"title" : "三级菜单","href" : "h3.html"}
+                    ]
+                }
+            ]
+        },
+        {
+            "icon"  : "icon-activity",
+            "title" : "活动管理",
+            "href"  : "h1.html",
+            "child" : ""
+        },
+        {
+            "icon"  : "icon-audit",
+            "title" : "审核",
+            "href"  : "h1.html",
+            "child" : [
+                {
+                    "title" : "商家提现审核",
+                    "href"  : "h2.html",
+                    "child" : ""
+                },
+                {
+                    "title" : "站外活动",
+                    "href"  : "",
+                    "child" : [
+                        {"title" : "三级菜单","href" : "h3.html"},
+                        {"title" : "三级菜单","href" : "h3.html"},
+                        {"title" : "三级菜单","href" : "h3.html"}
+                    ]
+                }
+            ]
+        },
+        {
+            "icon"  : "icon-users",
+            "title" : "帐号管理",
+            "href"  : "h1.html",
+            "child" : ""
+        }
+    ]
+    //初始化导航
+    rms.ui.initnav($('#navlist'),navdata);
+
+    
+});
+</script>

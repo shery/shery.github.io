@@ -1,0 +1,88 @@
+/*
+
+	For TinyLi 2014-11-12
+	BasicStyle v1.7
+
+*/ 
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, button, p, span, blockquote, th, td, hr, iframe { margin:0; padding:0; }
+body > div { margin-right:auto; margin-left:auto; }
+fieldset, img { border:0; }
+address, caption, cite, code, dfn, em, th, var { font-style:normal; font-weight:normal; }
+ul, ol, dl, li { list-style:none; }
+h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal; }
+abbr, acronym { border:0; font-variant:normal; }
+input, button, textarea, select, optgroup, option { font-family: inherit; font-size: inherit; font-style: inherit; font-weight: inherit; }
+code, kbd, samp, tt { font-size: 100%; }
+/*@purpose To enable resizing for IE */ 
+/*@branch For IE6-Win, IE7-Win */ 
+input, button, textarea, select{font-size:100%;}
+body { line-height: 1.5; }
+table { border-collapse:collapse; border-spacing:0; }
+caption, th { text-align:left; }
+sup, sub { font-size: 100%; vertical-align: baseline; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+a:active, a:focus { outline:none; }
+
+.clear {clear:both;font-size:1px;width:1px;visibility:hidden;margin-top:0px!important;margin-top:-1px;line-height:0}/*ie and firefox1.5 updata */
+.clear:after{content:".";display:block;height:0;clear:both;}	/* firefox1.0 */
+*+html .clear{margin-top:-1px!important;}
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+/* End hide from IE-mac */
+
+/*font*/
+body, td, input, textarea, select, button { font-size:12px; font-family:Arial,"宋体","新宋体",Helvetica,sans-serif;}
+table { font-size:inherit; font-size:100%; }
+.bold { font-weight:bold; }
+.f12{ font-size:12px;}
+.f14{ font-size:14px;}
+.f16{ font-size:16px;}
+
+/*layout*/
+.hand { cursor:pointer; }
+.block { display:block; }
+.unblock { display:none; }
+.tl{ text-align:left; }
+.tr{ text-align:right; }
+.tc{ text-align:center; }
+.fl { float:left; }
+.fr { float:right; }
+.cl{ clear:left; }
+.cr{ clear:right;}
+
+/*color*/
+.error { color:red; }
+.black { color:#000; }
+.white { color:#fff; }
+.red { color:#ff0000; }
+.orange { color:#ff7200; }
+.green{color:#427416;}
+.blue { color:#0878ba; }
+.navy { color:#00476a; }
+.pink{color:#eb5a91;}
+.yellow { color:#ff6600; }
+.gray3 { color:#333; }
+.gray5 { color:#555; }
+.gray6 { color:#666; }
+.gray8 { color:#888; }
+.gray9 { color:#999; }
+
+/*space*/
+.space_1 { padding:1px 0 0 0; }
+.space_2 { padding:2px 0 0 0; }
+.space_3 { padding:3px 0 0 0; }
+.space_4 { padding:4px 0 0 0; }
+.space_5 { padding:5px 0 0 0; }
+.space_6 { padding:6px 0 0 0; }
+.space_7 { padding:7px 0 0 0; }
+.space_8 { padding:8px 0 0 0; }
+.space_9 { padding:9px 0 0 0; }
+.space_10 { padding:10px 0 0 0; }
+.space_12 { padding:12px 0 0 0; }
+.space_15 { padding:15px 0 0 0; }
+.space_20 { padding:20px 0 0 0; }
+.space_25 { padding:25px 0 0 0; }
+.space_30 { padding:30px 0 0 0; }
+.space_50 { padding:50px 0 0 0; }

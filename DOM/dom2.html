@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<meta http-equiv="X-UA-compatible" content="IE=edge,chrome=1">
+		<title>dom2</title>
+		<style type="text/css">
+			#tag {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 50px;height: 50px;
+				border-radius: 50px;
+				background: #aaa;
+			}
+		</style>
+	</head>
+	<body>
+	<div id="tag"></div>
+	<script type="text/javascript">
+		var tag = document.getElementById('tag')
+		var isTrue = false;
+		tag.onmousedown =function(event){
+			isTrue = true;
+
+		};
+		tag.onmouseup =function(event){
+			isTrue = false;
+
+		};
+		document.onmousemove = function(event){
+			// var target = event.target
+			if (isTrue) {
+				x = event.clientX - 20;
+				y = event.clientY - 20;
+				tag.style.top = y + "px";
+				tag.style.left = x + "px";
+
+			};
+
+	};
+	</script>
+		
+	</body>
+</html>
