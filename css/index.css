@@ -1,200 +1,76 @@
 * {
+	vertical-align: middle;
 	box-sizing: border-box;
 }
-h1 {
-	font-size: 80px;
-	text-shadow: 1px 2px #22c3aa,2px 4px #aee2d9;
-	text-align: center;
-	font-weight: bold;
-	margin: 0 0 30px 0;
+html, body {
+	width: 100%;height: 100%;
 }
 h2 {
-	font-size: 36px;
 	font-weight: bold;
-	margin: 0 0 8px 0;
+    font-size: 60px;
+    margin-bottom: 28px;
+    min-height: 60px;
 }
-h4 {
-	font-size: 28px;
-	font-weight: bold;
-}
-h6 {
+h3 {
 	font-size: 24px;
 	font-weight: bold;
-	margin: 0 0 8px 0;
-}
-p {
-	font-size: 20px;
-	margin: 10px 0;
-	color: #aee2d9;
-}
-h2 em {
-	color: #008a75;
-	font-weight: bold;
-}
-ul {
-	color: #aee2d9;
-	font-size: 14px;
-}
-a {
-	color: #008A75;
-}
-a:hover {
-	color: #9f3;
-}
-a.highlight {
-	color: #9f3;
-}
-a.highlight:hover {
-	color: #008A75;
-}
-/*中英*/
-#lang-panel {
-	position: absolute;
-	right: 20px;
-	top: 20px;
-	border-radius: 5px;
-	z-index: 100;
-	font-size: 14px;
-}
-#lang-panel .lang {
-	display: inline-block;
-	border-radius: 5px;
-	padding: 2px 8px;
-}
-#lang-panel .lang.selected {
-	background-color: #aee2d9;
-	color: #008a75;
-	cursor: default;
-}
-/*内容*/
-.container {
-	display: block;
-	height: 100%;width: 100%;
-	min-width: 1024px;
-	overflow: hidden;	
-}
-.center {
-	text-align: center;
-}
-.section {
-	display: none;
-	position: absolute;
-	height: 100%;width: 100%;
-	padding: 50px;
-	background-color: #22c3aa;
-	color: #eef3f0;	
-
-}
-.section.active {
-	display: table;
 }
 .content {
-	display: table-cell;
 	width: 100%;height: 100%;
-	vertical-align: middle;
-}
-#avatar {
-	width: 256px;height: 256px;
-	border: 10px solid #aee2d9;
-	border-radius: 50%;
-}
-#title {
-	margin: 35px 0 0 0;
-}
-#subtitle {
-	margin: 20px 0 5px;
-	color: #aee2d9;
-}
-.tag-panel {
-	margin: 15px auto;
-}
-.tag {
-	display: inline-block;
-	padding: 2px 8px;
-	margin: 0 3px 3px 0;
-	background-color: #096254;
-	color: #aee2d9;
-	border-radius: 3px;
-	opacity: .5;
-}
-.tag.expert {
-	opacity: 1;
-}
-#contact-panel {
 	text-align: center;
-	margin-top: 18px;
 }
-.social {
+#container {
+	position: relative;
+	height: 100%;
+}
+.panel {
 	display: inline-block;
-	margin-right: 2px;
-	width: 40px;height: 40px;
-	border-radius: 20px;
-	background-color: #008a75;
-	background-image: url(../images/icons.png);
-	transition: 0.5s;
-	-moz-transition: 0.5s;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s;
-}
-.social:hover {
-	background-color: #096254;
-	border-radius: 5px;
-}
-.github {
-	background-position: 0 -60px;
-}
-.weibo {
-	background-position: 0 0px;
-}
-.linkedin {
-	background-position: 0 -112px;
-}
-/*导航*/
-#nav {
-	position: fixed;
-	z-index: 100;
-	top: 50%;
-	opacity: 1;
-}
-#nav .left {
-	left: 17px;
-}
-#nav li {
-	display: block;
-	width: 14px;height: 13px;
-	margin: 7px;
-	position: relative;
-}
-#nav li a {
-	display: block;
-	position: relative;
-	width: 100%;height: 100%;
-	z-index: 1;
-	cursor: pointer;
-	
-}
-#nav li .current span {
-	background-color: #333;
-}
-#nav span {
+	padding: 14px;
+	height: 100%;
 	position: absolute;
-	top: 2px;
-	left: 2px;
-	width: 8px;height: 8px;
-	border: 1px solid #000;
-	background: rgba(0,0,0,0);
-	border-radius: 50%;
-	z-index: 1;
+	top: 0;
+	transition: 1s;
 }
-.pp-tooltip.left {
-	left: 20px;
+.panel-left {
+	width: 70%;
+	left: 0;
+	text-align: right;
+	background-color: #22c3aa;
+	color: #fff;
 }
-.pp-tooltip {
-    position: absolute;
-    top: -2px;
-    color: #fff;
+.panel-right {
+	width: 30%;
+	left: 70%;
+	text-align: left;
+	background-color: #fff;
+	color: #22c3aa;
+}
+.panel, .panel-left:hover + .panel-right {
+    background-color: #22c3aa;
+    color: white;
+}
+
+.panel-right, .panel:hover {
+    background-color: white;
+    color: #22c3aa;
+}
+.discription {
+	height: 150px;
+}
+.link-panel {
+    margin-top: 40px;
     font-size: 14px;
-    font-family: arial, helvetica, sans-serif;
-    white-space: nowrap;
-    max-width: 220px;
+}
+.link-panel a {
+    display: inline-block;
+    margin: 3px 0;
+    color: inherit;
+    transition: inherit;
+    height: 20px;
+}
+.link-panel .link {
+    margin-bottom: 5px;
+}
+.panel:hover .link-panel a:hover {
+    color: #d0648a;
 }
