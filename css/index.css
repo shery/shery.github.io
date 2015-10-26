@@ -74,3 +74,15 @@ h3 {
 .panel:hover .link-panel a:hover {
     color: #d0648a;
 }
+#avatar {
+	position: absolute;
+	bottom: 20px;
+	left: 70%;
+	margin-left: -100px;
+	border-radius: 100px;
+	z-index: 100;
+	transition: 1s;
+}
+.panel-right:hover + img#avatar {
+    transform: rotateY(180deg);
+}
