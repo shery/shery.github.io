@@ -1,4 +1,4 @@
-$(document).ready(function  (){
+$(document).ready(function() {
 	$('li').hover(function() {
 		var tooltip = $(this).data('tooltip');
 		$(this).append('<div class="pp-tooltip left">' + tooltip + '</div>');
@@ -12,7 +12,7 @@ $(document).ready(function  (){
 	    	nextPage();
 	    };
 	});
-	$('li').click(function (){
+	$('li').click(function() {
 		var num = $(this).data('num');
 		var section = $('.section');
 		$('.current').removeClass('current');
