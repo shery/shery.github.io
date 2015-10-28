@@ -45,7 +45,12 @@ $(document).ready(function() {
 	        logo.strokeStyle = "rgb(34,195,169)"
 	        logo.stroke();
      	} else {
-     		$('#container').append('<img  id="avatar" src="images/avatar.png">');
+     		var container = document.getElementById("container");
+     		container.removeChild(canvas);
+     		var img = document.createElement("img");
+     		img.setAttribute("id","avatar");
+			img.setAttribute("src","images/avatar.png");
+     		container.appendChild(img);
      	}
 	};
 	draw();
