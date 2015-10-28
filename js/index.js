@@ -48,4 +48,5 @@ $(document).ready(function() {
      		$('#container').append('<img  id="avatar" src="images/avatar.png">');
      	}
 	};
+	draw();
 });
