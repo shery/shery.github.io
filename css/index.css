@@ -88,6 +88,7 @@ h3 {
 	left: 70%;
 	margin-left: -100px;
 	border-radius: 100px;
+	-moz-border-radius: 100px;
 	z-index: 100;
 	transition: 1s;
 	-moz-transition: 1s;
