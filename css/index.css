@@ -83,6 +83,6 @@ h3 {
 	z-index: 100;
 	transition: 1s;
 }
-.panel-right:hover + img#avatar {
+.panel-right:hover + #avatar {
     transform: rotateY(180deg);
 }
