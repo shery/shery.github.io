@@ -1,5 +1,7 @@
 * {
 	box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
 }
 h1 {
 	font-size: 80px;
@@ -53,12 +55,14 @@ a.highlight:hover {
 	right: 20px;
 	top: 20px;
 	border-radius: 5px;
+	-moz-border-radius: 5px;
 	z-index: 100;
 	font-size: 14px;
 }
 #lang-panel .lang {
 	display: inline-block;
 	border-radius: 5px;
+	-moz-border-radius: 5px;
 	padding: 2px 8px;
 }
 #lang-panel .lang.selected {
@@ -97,6 +101,7 @@ a.highlight:hover {
 	width: 256px;height: 256px;
 	border: 10px solid #aee2d9;
 	border-radius: 50%;
+	-moz-border-radius: 50%;
 }
 #title {
 	margin: 35px 0 0 0;
@@ -115,6 +120,7 @@ a.highlight:hover {
 	background-color: #096254;
 	color: #aee2d9;
 	border-radius: 3px;
+	-moz-border-radius: 3px;
 	opacity: .5;
 }
 .tag.expert {
@@ -129,6 +135,7 @@ a.highlight:hover {
 	margin-right: 2px;
 	width: 40px;height: 40px;
 	border-radius: 20px;
+	-moz-border-radius: 20px;
 	background-color: #008a75;
 	background-image: url(../images/icons.png);
 	transition: 0.5s;
@@ -139,6 +146,7 @@ a.highlight:hover {
 .social:hover {
 	background-color: #096254;
 	border-radius: 5px;
+	-moz-border-radius: 5px;
 }
 .github {
 	background-position: 0 -60px;
@@ -184,6 +192,7 @@ a.highlight:hover {
 	border: 1px solid #000;
 	background: rgba(0,0,0,0);
 	border-radius: 50%;
+	-moz-border-radius: 50%;
 	z-index: 1;
 }
 .pp-tooltip.left {

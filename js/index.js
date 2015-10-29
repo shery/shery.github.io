@@ -1,6 +1,6 @@
-window.onload = function() {
+$(document).ready(function() {
 	draw();
-};
+});
 var draw = function() {
 	var canvas = document.getElementById("avatar");
    	if (canvas.getContext) {
