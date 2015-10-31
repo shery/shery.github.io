@@ -1,4 +1,8 @@
-
+* {
+	box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
 h1 {
 	font-size: 80px;
 	text-shadow: 1px 2px #22c3aa,2px 4px #aee2d9;
@@ -204,8 +208,3 @@ a.highlight:hover {
     max-width: 220px;
 }
 
-* {
-	box-sizing: border-box;
-	-moz-box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-}
