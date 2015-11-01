@@ -53,12 +53,3 @@ var draw = function() {
 $(document).ready(function() {
 	draw();
 });
-#lang-panel {
-	position: absolute;
-	right: 20px;
-	top: 20px;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	z-index: 100;
-	font-size: 14px;
-}
