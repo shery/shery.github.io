@@ -49,27 +49,6 @@ a.highlight {
 a.highlight:hover {
 	color: #008A75;
 }
-/*中英*/
-#lang-panel {
-	position: absolute;
-	right: 20px;
-	top: 20px;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	z-index: 100;
-	font-size: 14px;
-}
-#lang-panel .lang {
-	display: inline-block;
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	padding: 2px 8px;
-}
-#lang-panel .lang.selected {
-	background-color: #aee2d9;
-	color: #008a75;
-	cursor: default;
-}
 /*内容*/
 .container {
 	display: block;
