@@ -32,3 +32,14 @@ var prewPage = function() {
 		section.eq(4).addClass('active');
 	};
 };
+var draw = function() {
+	var canvas = document.getElementById("avatar");
+   	if (canvas.getContext) {
+	    var avatar = canvas.getContext("2d");
+	    var img = new Image();
+	    img.onload = function() {
+	    	avatar.drawImage(img,0,0);
+	    };
+	    img.src = "images/avatar.png";
+   	} 
+};

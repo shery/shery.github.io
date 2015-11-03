@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	draw();
 	$('li').hover(function() {
 		var tooltip = $(this).data('tooltip');
 		$(this).append('<div class="pp-tooltip left">' + tooltip + '</div>');
