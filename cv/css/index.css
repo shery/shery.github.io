@@ -66,10 +66,10 @@ a.highlight:hover {
 	padding: 50px;
 	background-color: #22c3aa;
 	color: #eef3f0;	
-	transition: 1s background-color,1s 1s top,1s 1s bottom;
-	-moz-transition: 1s background-color,1s 1s top,1s 1s bottom;
-	-webkit-transition: 1s background-color,1s 1s top,1s 1s bottom;
-	-o-transition: 1s background-color,1s 1s top,1s 1s bottom;
+	transition: 1s background-color,1s 1s top;
+	-moz-transition: 1s background-color,1s 1s top;
+	-webkit-transition: 1s background-color,1s 1s top;
+	-o-transition: 1s background-color,1s 1s top;
 
 }
 .section.leaving {
