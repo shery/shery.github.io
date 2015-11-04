@@ -13,6 +13,7 @@ var nextPage = function() {
 	} else{
 		var current = li.eq(0);
 		$('.current').removeClass('current');
+		$('.leaving').removeClass('leaving');
 		current.children().addClass('current');
 		section.eq(0).addClass('active');
 	};
@@ -26,11 +27,13 @@ var prewPage = function() {
 		var current = li.eq(num);
 		$('.current').removeClass('current');
 		current.children().addClass('current');
+		section.eq(num).removeClass('leaving');
 		section.eq(num).addClass('active');
 	} else{
 		var current = li.eq(4);
 		$('.current').removeClass('current');
 		current.children().addClass('current');
+		section.slice(0,4).addClass('leaving');
 		section.eq(4).addClass('active');
 	};
 };

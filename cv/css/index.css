@@ -66,15 +66,33 @@ a.highlight:hover {
 	padding: 50px;
 	background-color: #22c3aa;
 	color: #eef3f0;	
-	transition: 1s background-color,1s 1s top;
-	-moz-transition: 1s background-color,1s 1s top;
-	-webkit-transition: 1s background-color,1s 1s top;
-	-o-transition: 1s background-color,1s 1s top;
+	transition: 1s background-color,1s transform;
+	-moz-transition: 1s background-color,1s transform;
+	-webkit-transition: 1s background-color,1s transform;
+	-o-transition: 1s background-color,1s transform;
+	transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+
 
 }
 .section.leaving {
 	background-color: #9f3;
-	top: -954px;
+	transform: translate3d(0,-100%,0);
+	-ms-transform: translate3d(0,-100%,0);
+	-moz-transform: translate3d(0,-100%,0);
+	-webkit-transform: translate3d(0,-100%,0);
+	-o-transform: translate3d(0,-100%,0); 
+}
+.section.active {
+	/*background-color: #22c3aa;
+	transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);*/
 }
 .content {
 	display: table-cell;

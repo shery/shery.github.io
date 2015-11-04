@@ -19,6 +19,12 @@ $(document).ready(function() {
 		$('.current').removeClass('current');
 		$('.active').removeClass('active');
 		$(this).children().addClass('current');
+		if ($('.leaving')) {
+			$('.leaving').removeClass('leaving');
+			section.slice(0,num).addClass('leaving');
+		} else{
+			section.slice(0,num).addClass('leaving');
+		};
 		section.eq(num).addClass('active');
 	});
 });
