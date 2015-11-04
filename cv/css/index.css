@@ -60,7 +60,7 @@ a.highlight:hover {
 	text-align: center;
 }
 .section {
-	display: none;
+	display: table;
 	position: absolute;
 	height: 100%;width: 100%;
 	padding: 50px;
@@ -69,7 +69,7 @@ a.highlight:hover {
 
 }
 .section.active {
-	display: table;
+	
 }
 .content {
 	display: table-cell;
