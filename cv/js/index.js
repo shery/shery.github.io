@@ -16,13 +16,19 @@ $(document).ready(function() {
 	$('li').click(function() {
 		var num = $(this).data('num');
 		var section = $('.section');
+		var active_num = $('.active').data('num');
 		$('.current').removeClass('current');
 		$('.active').removeClass('active');
 		$(this).children().addClass('current');
 		if ($('.leaving')) {
-			if (true) {} else{};
-			$('.leaving').removeClass('leaving');
-			section.slice(0,num).addClass('leaving');
+			if (num > active_num ) {
+				section.slice(0,num).addClass('leaving');
+			} else if (num == 0) {
+				$('.leaving').removeClass('leaving');
+			} else {
+				section.eq(num - 1).nextAll().removeClass('leaving');
+			};
+			
 		} else{
 			section.slice(0,num).addClass('leaving');
 		};
