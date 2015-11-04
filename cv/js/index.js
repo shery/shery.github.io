@@ -20,6 +20,7 @@ $(document).ready(function() {
 		$('.active').removeClass('active');
 		$(this).children().addClass('current');
 		if ($('.leaving')) {
+			if (true) {} else{};
 			$('.leaving').removeClass('leaving');
 			section.slice(0,num).addClass('leaving');
 		} else{
