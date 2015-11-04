@@ -8,6 +8,8 @@ var nextPage = function() {
 		$('.current').removeClass('current');
 		current.children().addClass('current');
 		section.eq(num).addClass('active');
+		section.eq(num - 1 ).addClass('leaving');
+
 	} else{
 		var current = li.eq(0);
 		$('.current').removeClass('current');

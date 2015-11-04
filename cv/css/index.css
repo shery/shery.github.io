@@ -66,10 +66,15 @@ a.highlight:hover {
 	padding: 50px;
 	background-color: #22c3aa;
 	color: #eef3f0;	
+	transition: 1s background-color,1s 1s top,1s 1s bottom;
+	-moz-transition: 1s background-color,1s 1s top,1s 1s bottom;
+	-webkit-transition: 1s background-color,1s 1s top,1s 1s bottom;
+	-o-transition: 1s background-color,1s 1s top,1s 1s bottom;
 
 }
-.section.active {
-	
+.section.leaving {
+	background-color: #9f3;
+	top: -954px;
 }
 .content {
 	display: table-cell;
