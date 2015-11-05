@@ -6,7 +6,7 @@ $(document).ready(function() {
 	},function() {
 		$('.pp-tooltip').remove();
 	});
-	$(document).mousewheel($.throttle(3000,function(event, delta) {
+	$(document).mousewheel($.debounce(2000,function(event, delta) {
 	    if (delta > 0) {
 	    	prewPage();
 	    	
