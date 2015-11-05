@@ -6,13 +6,14 @@ $(document).ready(function() {
 	},function() {
 		$('.pp-tooltip').remove();
 	});
-	$(document).mousewheel(function(event, delta) {
+	$(document).mousewheel($.throttle(3000,function(event, delta) {
 	    if (delta > 0) {
 	    	prewPage();
+	    	
 	    } else {
 	    	nextPage();
 	    };
-	});
+	}));
 	$('li').click(function() {
 		var num = $(this).data('num');
 		var section = $('.section');
