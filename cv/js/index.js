@@ -13,7 +13,7 @@ $(document).ready(function() {
 	    } else {
 	    	nextPage();
 	    };
-	},3000));
+	},2000));
 	$('li').click(function() {
 		var num = $(this).data('num');
 		var section = $('.section');
