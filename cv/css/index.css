@@ -49,7 +49,6 @@ a.highlight {
 a.highlight:hover {
 	color: #008A75;
 }
-/*内容*/
 .container {
 	display: block;
 	height: 100%;width: 100%;
@@ -85,14 +84,6 @@ a.highlight:hover {
 	-moz-transform: translate3d(0,-100%,0);
 	-webkit-transform: translate3d(0,-100%,0);
 	-o-transform: translate3d(0,-100%,0); 
-}
-.section.active {
-	/*background-color: #22c3aa;
-	transform: translate3d(0,0,0);
-	-ms-transform: translate3d(0,0,0);
-	-moz-transform: translate3d(0,0,0);
-	-webkit-transform: translate3d(0,0,0);
-	-o-transform: translate3d(0,0,0);*/
 }
 .content {
 	display: table-cell;
@@ -159,7 +150,6 @@ a.highlight:hover {
 .linkedin {
 	background-position: 0 -112px;
 }
-/*导航*/
 #nav {
 	position: fixed;
 	z-index: 100;
