@@ -3,7 +3,7 @@ var nextPage = function() {
 	var section = $('.section');
 	var num = parseInt($('.active').data('num')) + 1;
 	$('.active').removeClass('active');
-	if (num < 5) {
+	if (num < 6) {
 		var current = li.eq(num);
 		$('.current').removeClass('current');
 		current.children().addClass('current');
@@ -30,11 +30,11 @@ var prewPage = function() {
 		section.eq(num).removeClass('leaving');
 		section.eq(num).addClass('active');
 	} else{
-		var current = li.eq(4);
+		var current = li.eq(5);
 		$('.current').removeClass('current');
 		current.children().addClass('current');
-		section.slice(0,4).addClass('leaving');
-		section.eq(4).addClass('active');
+		section.slice(0,5).addClass('leaving');
+		section.eq(5).addClass('active');
 	};
 };
 var draw = function() {
