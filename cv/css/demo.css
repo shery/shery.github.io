@@ -1,22 +1,24 @@
 #demo_dom a {
     display: block;
-    width: 20px;height: 20px;
-    margin-top: 6px;
+    width: 26px;height: 26px;
+    margin-top: 7px;
+    line-height: 19px;
     text-decoration: none;
     border-radius: 50px;
     background: #fff;
     color: #fff;
-    border: 4px solid #FFFFFF;
+    border: 4px solid #fff;
 }
 #demo_dom a:hover {
-    border-color: #1abc9c; 
-    background: #1abc9c;
+    color: #fff;
+    border-color: #22C3AA; 
+    background: #22C3AA;
 }
 #demo_dom li {
     list-style: none;
     float: left;
     width: 40px;height: 40px;
-    background: #D7DCE0;
+    background: #ACEF6A;
     text-align: center;
     padding-left: 6px;
 }
@@ -37,6 +39,6 @@
     color: #aaa;
 }
 #demo_dom .dom_active a {
-    color: #d7dce0;
-    border-color: #d7dce0;
+    color: #ACEF6A;
+    border-color: #ACEF6A;
 }

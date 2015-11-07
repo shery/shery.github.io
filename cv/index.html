@@ -76,7 +76,8 @@
 						        <li class="item"><a href="#">9</a></li>
 						        <li class="next"><a href="#">></a></li>
 						    </ul>
-							<a href="https://github.com/shery15/Demos">更多原生JS组件请移步GitHub</a>
+						    <div class="clearfix"></div>
+							<a href="https://github.com/shery15/Demos">更多原生JS组件,请移步<span class="highlight">GitHub<span></a>
 						</div>
 					</div>
 				</div>
@@ -138,35 +139,90 @@
 					</div>
 				</div>
 			</div>
+			<script type="text/javascript">
+				var dom = document.getElementById('demo_dom');
+				var items = dom.getElementsByClassName('item');
+				var previouses = dom.getElementsByClassName('previous');
+				var nexts = dom.getElementsByClassName('next');
+				var clearActive = function() {
+				    var actives = dom.getElementsByClassName('dom_active'); 
+				    for (var i = 0; i < actives.length; i++) {
+				        var active =actives[i];
+				        active.setAttribute('class', 'item');
+				    };
+				}
+				var setPrevious = function(){
+				    var actives = dom.getElementsByClassName('dom_active'); 
+				    var active = actives[0];
+				    if (items[0] == active) {
+				        var lastItem = items[items.length -1];
+				        clearActive();
+				        lastItem.setAttribute('class', 'item dom_active');
+				    } else {
+				        do active = active.previousSibling;
+				        while (active && active.nodeType != 1);
+				        clearActive();
+				        active.setAttribute('class', 'item dom_active');
+				    }
+				};
+
+				var setNext = function(){
+				    var actives = dom.getElementsByClassName('dom_active'); 
+				    var active = actives[0];
+				    if (items[items.length -1] == active) { // is first item
+				        var firstItem = items[0];
+				        clearActive();
+				        firstItem.setAttribute('class', 'item dom_active');
+				    } else {
+				        do active = active.nextSibling;
+				        while (active && active.nodeType != 1);
+				        clearActive();
+				        active.setAttribute('class', 'item dom_active');
+				    }
+				};
+				document.onclick = function(event){
+				    var target = event.target.parentNode;
+				    var isClass = target.getAttribute('class');
+				    if (isClass == 'item') {
+				        clearActive();
+				        target.setAttribute('class', 'item dom_active');
+				    } else if (isClass == 'previous') {
+				        setPrevious();
+
+				    } else if (isClass == 'next') {
+				        setNext();
+				    }
+				};
+			</script>
 		</div>
 		<div id="nav" class="left">
 			<ul>
-				<li data-tooltip="首页" data-num="0">
+				<li class="sidebar" data-tooltip="首页" data-num="0">
 					<a href="#" class="current">
 						<span></span>
 					</a>
 				</li>
-				<li data-tooltip="技能" data-num="1">
+				<li class="sidebar" data-tooltip="技能" data-num="1">
 					<a href="#" class="">
 						<span></span>
 					</a>
 				</li>
-				<li data-tooltip="作品" data-num="2">
+				<li class="sidebar" data-tooltip="作品" data-num="2">
 					<a href="#" class="">
 						<span></span>
 					</a>
 				</li>
-				<li data-tooltip="教育" data-num="3">
+				<li class="sidebar" data-tooltip="教育" data-num="3">
 					<a href="#" class="">
 						<span></span>
 					</a>
 				</li>
-				<li data-tooltip="求职" data-num="4">
+				<li class="sidebar" data-tooltip="求职" data-num="4">
 					<a href="#" class="">
 						<span></span>
 					</a>
 				</li>
-				<li data-tooltip="联系" data-num="5">
+				<li class="sidebar" data-tooltip="联系" data-num="5">
 					<a href="#" class="">
 						<span></span>
 					</a>

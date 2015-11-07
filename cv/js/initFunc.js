@@ -1,5 +1,5 @@
 var nextPage = function() {
-	var li = $('li');
+	var li = $('.sidebar');
 	var section = $('.section');
 	var num = parseInt($('.active').data('num')) + 1;
 	$('.active').removeClass('active');
@@ -19,7 +19,7 @@ var nextPage = function() {
 	};
 };
 var prewPage = function() {
-	var li = $('li');
+	var li = $('.sidebar');
 	var section = $('.section');
 	var num = parseInt($('.active').data('num')) - 1;
 	$('.active').removeClass('active');

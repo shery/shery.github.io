@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	draw();
-	$('li').hover(function() {
+	$('.sidebar').hover(function() {
 		var tooltip = $(this).data('tooltip');
 		$(this).append('<div class="pp-tooltip left">' + tooltip + '</div>');
 	},function() {
@@ -14,7 +14,7 @@ $(document).ready(function() {
 	    	nextPage();
 	    };
 	},2000));
-	$('li').click(function() {
+	$('.sidebar').click(function() {
 		var num = $(this).data('num');
 		var section = $('.section');
 		var active_num = $('.active').data('num');
