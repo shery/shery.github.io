@@ -1,0 +1,42 @@
+#demo_dom a {
+    display: block;
+    width: 20px;height: 20px;
+    margin-top: 6px;
+    text-decoration: none;
+    border-radius: 50px;
+    background: #fff;
+    color: #fff;
+    border: 4px solid #FFFFFF;
+}
+#demo_dom a:hover {
+    border-color: #1abc9c; 
+    background: #1abc9c;
+}
+#demo_dom li {
+    list-style: none;
+    float: left;
+    width: 40px;height: 40px;
+    background: #D7DCE0;
+    text-align: center;
+    padding-left: 6px;
+}
+#demo_dom li:first-child {
+    margin-right: 4px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#demo_dom li:first-child a {
+    color: #aaa;
+}
+#demo_dom li:last-child {
+    margin-left: 4px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#demo_dom li:last-child a {
+    color: #aaa;
+}
+#demo_dom .dom_active a {
+    color: #d7dce0;
+    border-color: #d7dce0;
+}
