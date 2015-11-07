@@ -211,12 +211,15 @@ a.highlight:hover {
 	color: #008a75;
 }
 .list a {
+	display: inline-block;
+	margin-top: 18px;
 	color: #aee2d9
 }
 .list .demo {
 	float: left;
 	width: 70%;
 	height: 100px;
+	padding: 4px 100px;
 }
 .list a span {
 	color: #9f3;
