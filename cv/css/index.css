@@ -200,15 +200,20 @@ a.highlight:hover {
     max-width: 220px;
 }
 .list {
-	margin: 0 200px;
+	margin: 0 500px;
 }
 .list h3 {
 	float: left;
 	width: 30%;
 	height: 100px;
-	font-size: 42px;
+	font-size: 30px;
 	font-weight: bold;
 	color: #008a75;
+}
+.list p {
+	text-align: right;
+	font-size: 18px;
+	margin: 0;
 }
 .list a {
 	display: inline-block;
@@ -219,11 +224,7 @@ a.highlight:hover {
 	float: left;
 	width: 70%;
 	height: 100px;
-	padding: 4px 100px;
 }
-.list a span {
+.list .highlight {
 	color: #9f3;
-}
-.list a span:hover {
-	color: #008A75;
 }
