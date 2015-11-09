@@ -213,11 +213,7 @@ a.highlight:hover {
 .list p {
 	text-align: right;
 	font-size: 18px;
-	margin: 0;
-}
-.list a {
-	margin-top: 18px;
-	color: #aee2d9
+	margin: 10px 0;
 }
 .list .demo {
 	float: left;
