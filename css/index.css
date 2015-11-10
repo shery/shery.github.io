@@ -10,11 +10,13 @@ html, body {
 h2 {
 	font-weight: bold;
     font-size: 60px;
+    font-size: 6rem;
     margin-bottom: 28px;
     min-height: 60px;
 }
 h3 {
 	font-size: 24px;
+	font-size: 2.4rem;
 	font-weight: bold;
 }
 .content {
@@ -59,9 +61,6 @@ h3 {
     background-color: white;
     color: #22c3aa;
 }
-.discription {
-	height: 150px;
-}
 .link-panel {
     margin-top: 40px;
     font-size: 14px;
@@ -99,4 +98,28 @@ h3 {
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
+}
+
+@media screen and (max-width: 800px) {
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    #avatar {
+        left: 50%;
+        width: 80px;
+        height: 80px;
+        margin-left: -40px;
+        border-radius: 40px;
+    }
+    .panel-left {
+        width: 50%;
+    }
+    .panel-right {
+        width: 50%;
+        left: 50%;
+        text-align: left;
+    }
 }

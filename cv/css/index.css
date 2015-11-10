@@ -5,6 +5,7 @@
 }
 h1 {
 	font-size: 80px;
+	font-size: 8rem;
 	text-shadow: 1px 2px #22c3aa,2px 4px #aee2d9;
 	text-align: center;
 	font-weight: bold;
@@ -12,20 +13,24 @@ h1 {
 }
 h2 {
 	font-size: 36px;
+	font-size: 3.6rem;
 	font-weight: bold;
 	margin: 0 0 8px 0;
 }
 h4 {
 	font-size: 28px;
+	font-size: 2.8rem;
 	font-weight: bold;
 }
 h6 {
 	font-size: 24px;
+	font-size: 2.4rem;
 	font-weight: bold;
 	margin: 0 0 8px 0;
 }
 p {
 	font-size: 20px;
+	font-size: 2rem;
 	margin: 10px 0;
 	color: #aee2d9;
 }
@@ -36,6 +41,7 @@ h2 em {
 ul {
 	color: #aee2d9;
 	font-size: 14px;
+	font-size: 1.4rem;
 }
 a {
 	color: #008A75;
@@ -213,6 +219,7 @@ a.highlight:hover {
 .list p {
 	text-align: right;
 	font-size: 18px;
+	font-size: 1.8rem;
 	margin: 10px 0;
 }
 .list .demo {
