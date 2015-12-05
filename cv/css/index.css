@@ -10,7 +10,7 @@ html {
 h1 {
 	font-size: 70px;
 	font-size: 7rem;
-	text-shadow: 1px 2px #22c3aa,2px 4px #aee2d9;
+	text-shadow: 1px 2px #22c3aa,2px 4px rgba(255,255,255,.5);
 	text-align: center;
 	font-weight: bold;
 	margin: 0 0 30px 0;
@@ -36,16 +36,7 @@ p {
 	font-size: 20px;
 	font-size: 2rem;
 	margin: 10px 0;
-	color: #aee2d9;
-}
-h2 em {
-	color: #008a75;
-	font-weight: bold;
-}
-ul {
-	color: #aee2d9;
-	font-size: 14px;
-	font-size: 1.4rem;
+	color: rgba(255,255,255,.5);
 }
 a {
 	color: rgba(255,255,255,.5);
@@ -75,7 +66,7 @@ a.highlight:hover {
 	height: 100%;width: 100%;
 	padding: 50px;
 	background-color: #22c3aa;
-	color: #eef3f0;	
+	color: rgba(255,255,255,1);
 	transition: 1s background-color,1s transform;
 	-moz-transition: 1s background-color,1s transform;
 	-webkit-transition: 1s background-color,1s transform;
@@ -89,7 +80,7 @@ a.highlight:hover {
 
 }
 .section.leaving {
-	background-color: #9f3;
+	background-color: rgba(255,255,255,.5);
 	transform: translate3d(0,-100%,0);
 	-ms-transform: translate3d(0,-100%,0);
 	-moz-transform: translate3d(0,-100%,0);
@@ -103,7 +94,7 @@ a.highlight:hover {
 }
 #avatar {
 	width: 256px;height: 256px;
-	border: 10px solid #aee2d9;
+	border: 10px solid rgba(255,255,255,.5);
 	border-radius: 50%;
 	-moz-border-radius: 50%;
 }
@@ -164,7 +155,6 @@ a.highlight:hover {
 	position: fixed;
 	z-index: 100;
 	top: 50%;
-	opacity: 1;
 }
 #nav .left {
 	left: 17px;
@@ -184,15 +174,15 @@ a.highlight:hover {
 	
 }
 #nav li .current span {
-	background: rgba(0,0,0,.5);
+	background: rgba(255,255,255,.75);
 }
 #nav span {
 	position: absolute;
 	top: 2px;
 	left: 2px;
 	width: 8px;height: 8px;
-	border: 1px solid #000;
-	background: rgba(0,0,0,0);
+	border: 1px solid #fff;
+	background: rgba(255,255,255,0);
 	border-radius: 50%;
 	-moz-border-radius: 50%;
 	z-index: 1;
@@ -215,9 +205,5 @@ a.highlight:hover {
 .list h3 {
 	font-size: 30px;
 	font-weight: bold;
-	color: #008a75;
 	text-align: center;
-}
-.demo h4 {
-	text-align: left;
 }
