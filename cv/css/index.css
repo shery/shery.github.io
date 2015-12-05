@@ -80,7 +80,7 @@ a.highlight:hover {
 
 }
 .section.leaving {
-	background-color: rgba(255,255,255,.5);
+	background-color: rgba(255,255,255,1);
 	transform: translate3d(0,-100%,0);
 	-ms-transform: translate3d(0,-100%,0);
 	-moz-transform: translate3d(0,-100%,0);
