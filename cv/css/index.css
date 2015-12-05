@@ -120,14 +120,13 @@ a.highlight:hover {
 	display: inline-block;
 	padding: 2px 8px;
 	margin: 0 3px 3px 0;
-	background-color: #096254;
-	color: #aee2d9;
+	background-color: rgba(255,255,255,0.5);
+	color: #22c3aa;
 	border-radius: 3px;
 	-moz-border-radius: 3px;
-	opacity: .5;
 }
 .tag.expert {
-	opacity: 1;
+	background-color: rgba(255,255,255,1);
 }
 #contact-panel {
 	text-align: center;
