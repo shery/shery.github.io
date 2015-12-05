@@ -8,22 +8,22 @@ html {
 	font-size: 62.5%;
 }
 h1 {
-	font-size: 80px;
-	font-size: 8rem;
+	font-size: 70px;
+	font-size: 7rem;
 	text-shadow: 1px 2px #22c3aa,2px 4px #aee2d9;
 	text-align: center;
 	font-weight: bold;
 	margin: 0 0 30px 0;
 }
 h2 {
-	font-size: 36px;
-	font-size: 3.6rem;
+	font-size: 35px;
+	font-size: 3.5rem;
 	font-weight: bold;
 	margin: 0 0 8px 0;
 }
 h4 {
-	font-size: 28px;
-	font-size: 2.8rem;
+	font-size: 24px;
+	font-size: 2.4rem;
 	font-weight: bold;
 }
 h6 {
@@ -107,10 +107,10 @@ a.highlight:hover {
 	-moz-border-radius: 50%;
 }
 #title {
-	margin: 35px 0 0 0;
+	margin: 6px 0 0 0;
 }
 #subtitle {
-	margin: 20px 0 5px;
+	margin: 18px 0 4px;
 	color: #aee2d9;
 }
 .tag-panel {
@@ -184,7 +184,7 @@ a.highlight:hover {
 	
 }
 #nav li .current span {
-	background-color: #333;
+	background: rgba(0,0,0,0.5);
 }
 #nav span {
 	position: absolute;
@@ -210,28 +210,13 @@ a.highlight:hover {
     max-width: 220px;
 }
 .list {
-	margin: 0 500px;
+	position: relative;
 }
 .list h3 {
-	float: left;
-	margin-right: 2%;
-	width: 28%;
-	height: 100px;
 	font-size: 30px;
 	font-weight: bold;
 	color: #008a75;
-	text-align: right;
-}
-.list p {
-	text-align: right;
-	font-size: 18px;
-	font-size: 1.8rem;
-	margin: 10px 0;
-}
-.list .demo {
-	float: left;
-	width: 70%;
-	height: 100px;
+	text-align: center;
 }
 .list .highlight {
 	color: #9f3;

@@ -7,7 +7,6 @@
 		<link rel="shortcut icon" href="images/favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
-		<link rel="stylesheet" type="text/css" href="css/demo.css" />	
 		<title>许锐的简历</title>
 		<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
 		<script type="text/javascript" src="js/underscore-min.js"></script>
@@ -62,61 +61,34 @@
 				<div class="content">
 					<h1>个人作品</h1>
 					<div class="list">
-						<h3>原生JS组件</h3>
-						<div class="demo">
-							<ul id="demo_dom">
-						        <li class="previous"><a href="#"><</a></li>
-						        <li class="item"><a href="#">1</a></li>
-						        <li class="item"><a href="#">2</a></li>
-						        <li class="item"><a href="#">3</a></li>
-						        <li class="item"><a href="#">4</a></li>
-						        <li class="item"><a href="#">5</a></li>
-						        <li class="item"><a href="#">6</a></li>
-						        <li class="item"><a href="#">7</a></li>
-						        <li class="item"><a href="#">8</a></li>
-						        <li class="item"><a href="#">9</a></li>
-						        <li class="next"><a href="#">></a></li>
-						    </ul>
-						    <div class="clearfix"></div>
-							<p>
-								更多原生JS组件,请移步
-								<a href="https://github.com/shery15/Demos" class="highlight" target="_blank">
-									GitHub
-								</a>
-							</p>
-						</div>
-						<h3>仿微信公众平台</h3>
-						<div class="demo">
-							<h4>仿微信公众号管理平台前后端交互(Express)</h4>
-							<p>
-								更多细节,请移步
-								<a href="https://github.com/shery15/Platform" class="highlight" target="_blank">
-									GitHub
-								</a>
-							</p>
-						</div>
-						<h3>个人主页</h3>
-						<div class="demo">
-							<h4>利用GitHub Pages搭建的<a href="../" class="highlight" target="_blank">个人主页</a></h4>
-							<p>
-								更多细节,请移步
-								<a href="https://github.com/shery15/shery15.github.io" class="highlight" target="_blank">
-									GitHub
-								</a>
-							</p>
-						</div>
+						<h3>
+							<a href="https://github.com/shery15/Platform" target="_blank">
+								仿微信公众平台	
+							</a>
+						</h3>
+						<p>仿微信公众号管理平台前后端交互(Express)</p>
 					</div>
+					<div class="list">
+						<h3>
+							<a href="https://github.com/shery15/shery15.github.io" target="_blank">
+								个人主页
+							</a>
+						</h3>
+						<p>利用GitHub Pages搭建的个人主页</p>
+					</div>
+					<p>
+						更多细节,请移步
+						<a href="https://github.com/shery15/shery15.github.io" class="highlight" target="_blank">
+							GitHub
+						</a>
+					</p>
 				</div>
 			</div>
 			<div class="section center" style="z-index: 3;" data-num="3">
 				<div class="content">
 					<h1>教育背景</h1>
-					<p>西南科技大学 本科</p>
+					<h2>西南科技大学 本科</h2>
 					<p>计算机科学与技术学院 信息安全专业</p>
-					<h2>
-						<em>2013年6月</em>
-						毕业
-					</h2>
 					<h4>
 						<a href="mailto:npcoci@gmail.com" target="_blank" class="highlight">
 							招我到碗里来吧！
@@ -165,61 +137,6 @@
 					</div>
 				</div>
 			</div>
-			<script type="text/javascript">
-				var dom = document.getElementById('demo_dom');
-				var items = dom.getElementsByClassName('item');
-				var previouses = dom.getElementsByClassName('previous');
-				var nexts = dom.getElementsByClassName('next');
-				var clearActive = function() {
-				    var actives = dom.getElementsByClassName('dom_active'); 
-				    for (var i = 0; i < actives.length; i++) {
-				        var active =actives[i];
-				        active.setAttribute('class', 'item');
-				    };
-				}
-				var setPrevious = function(){
-				    var actives = dom.getElementsByClassName('dom_active'); 
-				    var active = actives[0];
-				    if (items[0] == active) {
-				        var lastItem = items[items.length -1];
-				        clearActive();
-				        lastItem.setAttribute('class', 'item dom_active');
-				    } else {
-				        do active = active.previousSibling;
-				        while (active && active.nodeType != 1);
-				        clearActive();
-				        active.setAttribute('class', 'item dom_active');
-				    }
-				};
-
-				var setNext = function(){
-				    var actives = dom.getElementsByClassName('dom_active'); 
-				    var active = actives[0];
-				    if (items[items.length -1] == active) { // is first item
-				        var firstItem = items[0];
-				        clearActive();
-				        firstItem.setAttribute('class', 'item dom_active');
-				    } else {
-				        do active = active.nextSibling;
-				        while (active && active.nodeType != 1);
-				        clearActive();
-				        active.setAttribute('class', 'item dom_active');
-				    }
-				};
-				document.onclick = function(event){
-				    var target = event.target.parentNode;
-				    var isClass = target.getAttribute('class');
-				    if (isClass == 'item') {
-				        clearActive();
-				        target.setAttribute('class', 'item dom_active');
-				    } else if (isClass == 'previous') {
-				        setPrevious();
-
-				    } else if (isClass == 'next') {
-				        setNext();
-				    }
-				};
-			</script>
 		</div>
 		<div id="nav" class="left">
 			<ul>
