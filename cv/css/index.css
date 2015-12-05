@@ -46,6 +46,7 @@ a:hover {
 
 }
 a.highlight {
+	border-bottom: 2px solid #fff;
 	color: rgba(255,255,255,1);
 }
 a.highlight:hover {
