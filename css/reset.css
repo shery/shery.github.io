@@ -14,5 +14,5 @@ a:hover { text-decoration: none; cursor: pointer; }
 img { border: none; }
 
 
-.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
-.clearfix { *zoom:1; }
+.clearfix:after { content: "\200B"; display: block; height: 0; clear: both; }
+.clearfix { *zoom: 1; }
