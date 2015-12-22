@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>品牌</title>
+<link rel="stylesheet" href="css/robot.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="w1200">
+            <h1 class="logo"><a href="index.html"><img src="images/logo.png"></a></h1>
+            <div class="search">
+                <input type="text" />
+                <input type="submit" value="" />
+            </div>
+            <ul class="nav">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="品牌.html" class="active">品牌</a></li>
+                <li><a href="行业.html">行业</a></li>
+                <li><a href="应用.html">应用</a></li>
+                <li><a href="集成商.html">集成商</a></li>
+                <li><a href="资讯.html">资讯</a></li>
+            </ul>
+    </div>
+    </div>
+    <div class="crumbs">
+        <span>当前位置：</span>
+        <a href="index.html">首页</a>
+        <em>></em>
+        品牌
+    </div>
+    <div class="jsBrandTab brand_page">
+        <ul class="tab_title">
+            <li class="active" data-id="1"><span>欧美品牌</span></li>
+            <li data-id="2"><span>日韩品牌</span></li>
+            <li data-id="3"><span>中国品牌</span></li>
+        </ul>
+        <ul class="brand_list">
+            <!-- <li>
+                <a href="#"><img src="images/brand1.jpg"></a>
+                <a href="#"><img src="images/brand2.gif"></a>
+                <a href="#"><img src="images/brand3.gif"></a>
+                <a href="#"><img src="images/brand4.gif"></a>
+                <a href="#"><img src="images/brand5.jpg"></a>
+                <a href="#"><img src="images/brand0.jpg"></a>
+            </li>
+            <li>
+                <a href="#"><img src="images/brand11.jpg"></a>
+                <a href="#"><img src="images/brand22.png"></a>
+                <a href="#"><img src="images/brand33.jpg"></a>
+                <a href="#"><img src="images/brand44.jpg"></a>
+                <a href="#"><img src="images/brand55.jpg"></a>
+                <a href="#"><img src="images/brand00.jpg"></a>
+            </li> -->
+        </ul>
+        <div class="clear space_40"></div>
+    </div>
+    <div class="footer">
+        <div class="w1200">
+            <img class="logo" src="images/logo1.png">
+            <div class="copyright">
+                <ul class="nav">
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">注册新用户</a></li>
+                    <li><a href="#">会员登录</a></li>
+                    <li><a href="#">集成商登录</a></li>
+                    <li><a href="#">找商户</a></li>
+                    <li><a href="#">使用协议</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+                <p>沪ICP备14010756-1号 COPYRIGHT © 机器人在线版权所有. ALL RIGHT RESERVED.</p>
+                <div class="approve">
+                    <img src="images/cr1.jpg">
+                    <img src="images/cr2.jpg">
+                    <img src="images/cr3.jpg">
+                    <img src="images/cr4.jpg">
+                </div>
+            </div>
+            <ul class="others">
+                <li><img src="images/wechat_icon.png">手机站：http://m.imrobotic.com/</li>
+                <li><img src="images/sina_icon.png">微&nbsp;&nbsp;&nbsp;&nbsp;博：imrobotic</li>
+                <li><img src="images/phone_icon.png">电&nbsp;&nbsp;&nbsp;&nbsp;话：021-61316866</li>
+                <li><img src="images/mail_icon.png">邮&nbsp;&nbsp;&nbsp;&nbsp;箱：sales@imrobotic.com</li>
+                <li><img src="images/site_icon.png">地&nbsp;&nbsp;&nbsp;&nbsp;址：中国 ● 上海</li>
+            </ul>
+            <dl class="code">
+                <dt>
+                    <img src="images/code1.png">
+                    <span>服务号：imrobotic</span>
+                </dt>
+                <dd>
+                    <img src="images/code2.png">
+                    <span>订阅号：im_robotic</span>
+                </dd>
+            </dl>
+            <div class="clear"></div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+
+    $(function(){
+
+        //初始化品牌列表内容
+        $.ajax({
+            url: 'xxxxxxxxxx',
+            dataType: 'json',
+            timeout: 300,
+            complete: function(data){
+                $('.jsBrandTab .brand_list').html('<li>\
+                    <a href="#"><img src="images/brand1.jpg"></a>\
+                    <a href="#"><img src="images/brand2.gif"></a>\
+                    <a href="#"><img src="images/brand3.gif"></a>\
+                    <a href="#"><img src="images/brand4.gif"></a>\
+                    <a href="#"><img src="images/brand5.jpg"></a>\
+                    <a href="#"><img src="images/brand0.jpg"></a>\
+                </li>\
+                <li>\
+                    <a href="#"><img src="images/brand11.jpg"></a>\
+                    <a href="#"><img src="images/brand22.png"></a>\
+                    <a href="#"><img src="images/brand33.jpg"></a>\
+                    <a href="#"><img src="images/brand44.jpg"></a>\
+                    <a href="#"><img src="images/brand55.jpg"></a>\
+                    <a href="#"><img src="images/brand00.jpg"></a>\
+                </li>');
+            },
+            error: function(){
+                console.log("加载失败!");
+            }
+        });
+
+        //切换标题加载内容
+        $('.jsBrandTab .tab_title li').click(function(){
+            //改变标题样式
+            $('.jsBrandTab .tab_title li').removeClass('active');
+            $(this).addClass('active');
+            //改变内容
+            //data-id="1"表示欧美品牌；data-id="2"表示日韩品牌；data-id="3"表示中国品牌。
+            //获取方式(num类型)：$(this).attr('data-id')*1
+            var parameter = $(this).attr('data-id')*1;
+            $.ajax({
+                url: 'xxxxxxxxxx',
+                dataType: 'json',
+                timeout: 300,
+                complete: function(data){
+                    if(parameter == 1){
+                        $('.jsBrandTab .brand_list').html('<li>\
+                            <a href="#"><img src="images/brand1.jpg"></a>\
+                            <a href="#"><img src="images/brand2.gif"></a>\
+                            <a href="#"><img src="images/brand3.gif"></a>\
+                            <a href="#"><img src="images/brand4.gif"></a>\
+                            <a href="#"><img src="images/brand5.jpg"></a>\
+                            <a href="#"><img src="images/brand0.jpg"></a>\
+                        </li>\
+                        <li>\
+                            <a href="#"><img src="images/brand11.jpg"></a>\
+                            <a href="#"><img src="images/brand22.png"></a>\
+                            <a href="#"><img src="images/brand33.jpg"></a>\
+                            <a href="#"><img src="images/brand44.jpg"></a>\
+                            <a href="#"><img src="images/brand55.jpg"></a>\
+                            <a href="#"><img src="images/brand00.jpg"></a>\
+                        </li>');
+                    }else if(parameter == 2){
+                        $('.jsBrandTab .brand_list').html('<li>\
+                            <a href="#"><img src="images/brand1.jpg"></a>\
+                            <a href="#"><img src="images/brand2.gif"></a>\
+                            <a href="#"><img src="images/brand3.gif"></a>\
+                            <a href="#"><img src="images/brand4.gif"></a>\
+                            <a href="#"><img src="images/brand5.jpg"></a>\
+                            <a href="#"><img src="images/brand0.jpg"></a>\
+                        </li>');
+                    }else{
+                        $('.jsBrandTab .brand_list').html('<li>\
+                            <a href="#"><img src="images/brand11.jpg"></a>\
+                            <a href="#"><img src="images/brand22.png"></a>\
+                            <a href="#"><img src="images/brand33.jpg"></a>\
+                            <a href="#"><img src="images/brand44.jpg"></a>\
+                            <a href="#"><img src="images/brand55.jpg"></a>\
+                            <a href="#"><img src="images/brand00.jpg"></a>\
+                        </li>');
+                    }
+                },
+                error: function(){
+                    console.log("加载失败!");
+                }
+            });
+        });
+    });
+
+</script>

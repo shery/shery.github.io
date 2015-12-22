@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<title>index</title>
+<link rel="stylesheet" href="css/robot.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="w1200">
+            <h1 class="logo"><a href="index.html"><img src="images/logo.png"></a></h1>
+            <div class="search">
+                <input type="text" />
+                <input type="submit" value="" />
+            </div>
+            <ul class="nav">
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="品牌.html">品牌</a></li>
+                <li><a href="行业.html">行业</a></li>
+                <li><a href="应用.html">应用</a></li>
+                <li><a href="集成商.html">集成商</a></li>
+                <li><a href="资讯.html">资讯</a></li>
+            </ul>   
+    </div>
+    </div>
+    <div class="index_page">
+        <div id="full-screen-slider">
+            <ul id="slides">
+                <li style="background-image:url(images/banner.jpg);"><a href="#">1</a></li>
+                <li style="background-image:url(images/banner1.jpg);"><a href="#">2</a></li>
+                <li style="background-image:url(images/banner.jpg);"><a href="#">3</a></li>
+                <li style="background-image:url(images/banner1.jpg);"><a href="#">4</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <div class="front_js intro_img">
+            <a href="#"><img src="images/img1.jpg"></a>
+            <a href="#"><img src="images/img2.jpg"></a>
+            <a href="#"><img src="images/img3.jpg"></a>
+            <a href="#"><img src="images/img4.jpg"></a>
+            <div class="clear space_8"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="w1200">
+            <img class="logo" src="images/logo1.png">
+            <div class="copyright">
+                <ul class="nav">
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">注册新用户</a></li>
+                    <li><a href="#">会员登录</a></li>
+                    <li><a href="#">集成商登录</a></li>
+                    <li><a href="#">找商户</a></li>
+                    <li><a href="#">使用协议</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+                <p>沪ICP备14010756-1号 COPYRIGHT © 机器人在线版权所有. ALL RIGHT RESERVED.</p>
+                <div class="approve">
+                    <img src="images/cr1.jpg">
+                    <img src="images/cr2.jpg">
+                    <img src="images/cr3.jpg">
+                    <img src="images/cr4.jpg">
+                </div>
+            </div>
+            <ul class="others">
+                <li><img src="images/wechat_icon.png">手机站：http://m.imrobotic.com/</li>
+                <li><img src="images/sina_icon.png">微&nbsp;&nbsp;&nbsp;&nbsp;博：imrobotic</li>
+                <li><img src="images/phone_icon.png">电&nbsp;&nbsp;&nbsp;&nbsp;话：021-61316866</li>
+                <li><img src="images/mail_icon.png">邮&nbsp;&nbsp;&nbsp;&nbsp;箱：sales@imrobotic.com</li>
+                <li><img src="images/site_icon.png">地&nbsp;&nbsp;&nbsp;&nbsp;址：中国 ● 上海</li>
+            </ul>
+            <dl class="code">
+                <dt>
+                    <img src="images/code1.png">
+                    <span>服务号：imrobotic</span>
+                </dt>
+                <dd>
+                    <img src="images/code2.png">
+                    <span>订阅号：im_robotic</span>
+                </dd>
+            </dl>
+            <div class="clear"></div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+
+    //焦点图
+    $(function(){
+        var numpic = $('#slides li').size()-1;
+        var nownow = 0;
+        var inout = 0;
+        var TT = 0;
+        var SPEED = 5000;
+        $('#slides li').eq(0).siblings('li').css({'display':'none'});
+        var ulstart = '<ul id="pagination">',
+            ulcontent = '',
+            ulend = '</ul>';
+        ADDLI();
+        var pagination = $('#pagination li');
+        var paginationwidth = $('#pagination').width();
+        // $('#pagination').css('margin-left',(470-paginationwidth));
+        pagination.eq(0).addClass('current');
+        function ADDLI(){
+            //var lilicount = numpic + 1;
+            for(var i = 0; i <= numpic; i++){
+                ulcontent += '<li>' + '<a>' + (i+1) + '</a>' + '</li>';
+            }
+            $('#slides').after(ulstart + ulcontent + ulend);    
+        }
+        pagination.on('click',DOTCHANGE);
+        function DOTCHANGE(){
+            var changenow = $(this).index();
+            $('#slides li').eq(nownow).css('z-index','900');
+            $('#slides li').eq(changenow).css({'z-index':'800'}).show();
+            pagination.eq(changenow).addClass('current').siblings('li').removeClass('current');
+            $('#slides li').eq(nownow).fadeOut(400,function(){$('#slides li').eq(changenow).fadeIn(500);});
+            nownow = changenow;
+        }
+        pagination.mouseenter(function(){
+            inout = 1;
+        })
+        pagination.mouseleave(function(){
+            inout = 0;
+        })
+        function GOGO(){
+            var NN = nownow+1;
+            if( inout == 1 ){
+                } else {
+                if(nownow < numpic){
+                $('#slides li').eq(nownow).css('z-index','900');
+                $('#slides li').eq(NN).css({'z-index':'800'}).show();
+                pagination.eq(NN).addClass('current').siblings('li').removeClass('current');
+                $('#slides li').eq(nownow).fadeOut(400,function(){$('#slides li').eq(NN).fadeIn(500);});
+                nownow += 1;
+            }else{
+                NN = 0;
+                $('#slides li').eq(nownow).css('z-index','900');
+                $('#slides li').eq(NN).stop(true,true).css({'z-index':'800'}).show();
+                $('#slides li').eq(nownow).fadeOut(400,function(){$('#slides li').eq(0).fadeIn(500);});
+                pagination.eq(NN).addClass('current').siblings('li').removeClass('current');
+                nownow=0;
+                }
+            }
+            TT = setTimeout(GOGO, SPEED);
+        }
+        TT = setTimeout(GOGO, SPEED); 
+    });
+
+</script>
