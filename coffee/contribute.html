@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0" />
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+<link type="text/css" rel="stylesheet" href="css/layout.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<title>contribute</title>
+<body>
+	<div class="header">
+		<div class="w1100">
+			<h1 class="logo"><a href="index.html"><img src="images/logo.png"></a></h1>
+			<div class="fr">
+				<div onclick="showMenu();" class="menubtn">菜单按钮</div>
+				<div onclick="$('.searchbox').show();" class="searchbtn">搜索按钮</div>
+				<div class="nav">
+					<a href="index.html">首页</a> |
+					<a href="contribute.html">投稿</a> |
+					<a href="aboutus.html">关于我们</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="headerfill"></div>
+	<div class="smallbanner">
+		<img src="images/bannerfill.png">
+		<div class="text">
+			<h2>我不在家，就在咖啡馆</h2>
+			<p>不在咖啡馆，就在去咖啡馆的路上</p>
+		</div>
+	</div>
+	<div class="othercont">
+		<h3>投&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;稿</h3>
+		<div class="cont">
+			<p>如果你愿意和我们一起分享些不一样的咖啡馆或者咖啡故事，请联系我们：</p>
+			<p>投稿邮箱：jarvan@icarexm.com</p>
+			<p>微信号：coffee89757</p>
+			<p>格式与内容：咖啡馆名称、LOGO、地址、联系方式、营业时间、标签、图片、文字介绍、其他说明（如招聘信息等）</p>
+		</div>
+		<div class="codes">
+			<img src="images/code.png">
+			<img src="images/right_fill.png">
+			<img src="images/code.jpg">
+		</div>
+	</div>
+	<div class="clear space_50"></div>
+	<div class="footer">Copyright © 2015  icarexm.com<em>|</em><a href="aboutus.html">关于我们</a></div>
+	<div onclick="goTop();" class="gotop">回到顶部</div>
+	<div class="searchbox">
+		<div class="cont">
+			<div class="input"><input type="text" placeholder="请输入您所要找的咖啡馆 ..." /></div>
+			<div class="btns">
+				<input type="submit" value="搜索" />
+				<a onclick="$('.searchbox').hide();">取消</a>
+			</div>
+		</div>
+	</div>
+	<div class="menubox" onclick="hideMenu();">
+		<ul class="cont">
+			<li><a href="index.html">首页</a></li>
+			<li><a href="contribute.html">投稿</a></li>
+			<li><a href="aboutus.html">关于我们</a></li>
+		</ul>
+	</div>
+</body>
+<script type="text/javascript">
+
+	//显示隐藏菜单 开始----------------------------------->
+	function showMenu(){
+		$('.menubox').fadeIn(250);
+		$('.menubox .cont').css("right","0");
+	}
+	function hideMenu(){
+		$('.menubox .cont').css("right","-150px");
+		$('.menubox').fadeOut(250);
+	}
+	//显示隐藏菜单 开始----------------------------------->
+
+
+	//回到顶部 开始--------------------------------------->
+	$(window).scroll(function(){
+		if($(window).scrollTop() > 10){
+			$('.gotop').fadeIn(250);
+		}else{
+			$('.gotop').fadeOut(250);
+		}
+	});
+
+    function goTop(){
+    	$("body,html").animate({scrollTop:0},300);
+    }
+    //回到顶部 结束---------------------------------------<
+
+</script>
+</html>
