@@ -56,12 +56,14 @@ h3 {
 	background-color: #fff;
 	color: #22c3aa;
 }
-.panel, .panel-left:hover + .panel-right {
+.panel, 
+.panel-left:hover + .panel-right {
     background-color: #22c3aa;
     color: white;
 }
 
-.panel-right, .panel:hover {
+.panel-right, 
+.panel:hover {
     background-color: white;
     color: #22c3aa;
 }
