@@ -17,11 +17,28 @@ module.exports = function(grunt){
                     dest: 'dest/js',
                 }],
             },
+            buildb: {
+                options: {
+                    mangle: false,
+                    preserveComments: 'all', 
+                },
+                files: {
+                    'js/index.min.js': ['js/index.js'],
+                },
+            },
+            release: {
+                files: {
+                    'cv/js/index.min.js': ['cv/js/index.js','cv/js/initFunc.js'],
+                },
+            },
         },
 
     });
 
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    
+    grunt.registerTask('builda', ['uglify:builda']);
+    grunt.registerTask('buildb', ['uglify:buildb']);
+    grunt.registerTask('release', ['uglify:release']);
 
-    grunt.registerTask('build', ['uglify:builda']);
 };
