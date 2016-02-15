@@ -6,187 +6,205 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="shortcut icon" href="images/favicon.ico" />
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
-		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
+		<style>
+			.content {
+				    display: -webkit-flex;
+				    display: -ms-flexbox;
+				    display:         flex;
+				    -webkit-justify-content: center;
+				    -ms-flex-pack: center;
+				            justify-content: center;
+				    -webkit-align-items: center;
+				    -ms-flex-align: center;
+				            align-items: center;
+				    background-color: #000;
+				    color: #fff;
+				    height: 100vh;
+				    font-size: 4vh;
+			}
+		</style>
 		<title>许锐的简历</title>
-		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-		<script type="text/javascript" src="js/underscore-min.js"></script>
-		<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
-		<script type="text/javascript" src="js/index.min.js"></script>
+		<!--<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>-->
+		<!--<script type="text/javascript" src="js/underscore-min.js"></script>-->
+		<!--<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>-->
+		<!--<script type="text/javascript" src="js/index.min.js"></script>-->
 	</head>
 	<body>
 		<div class="container">
-			<div class="section center active" style="z-index: 6;" data-num="0">
-				<div class="content">
-					<canvas id="avatar" width="236" height="236"></canvas>
-					<h1 id="title">许锐</h1>
-					<p>不忘初心，方得始终</p>
-					<h4>努力成为一个Web前端工程师</h4>
-					<p>
-						<a href="mailto:npcoci@gmail.com" class="highlight">npcoci@gmail.com</a>
-					</p>
-				</div>
-			</div>
-			<div class="section center" style="z-index: 5;" data-num="1">
-				<div class="content">
-					<h1>擅长技术</h1>
-					<div class="tag-panel">
-                    	<div class="tag expert">HTML</div>
-                    	<div class="tag expert">CSS</div>
-                	</div>
-	                <div class="tag-panel">
-	                    <div class="tag expert">JavaScript</div>
-	                    <div class="tag expert">jQuery</div>
-	                    <div class="tag">Bootstrap</div>
-	                    <div class="tag">node.js</div>    
-               		</div>
-               		<div class="tag-panel">
-	                    <div class="tag">HTML5</div>
-	                    <div class="tag">CSS3</div>
-	                    <div class="tag">less</div>
-	                    <div class="tag">express</div>    
-               		</div>
-               		<div class="tag-panel">
-	                    <div class="tag expert">网页设计</div>
-	                    <div class="tag">平面设计</div>
-	                    <div class="tag">音视频编辑</div>   
-               		</div>
-               		<div class="tag-panel">
-	                    <div class="tag expert">PhotoShop</div>
-	                    <div class="tag">Markdown</div> 
-               		</div>
-				</div>
-			</div>
-			<div class="section center" style="z-index: 4;" data-num="2">
-				<div class="content">
-					<h1>个人作品</h1>
-					<div class="list">
-						<h3>
-							<a href="https://github.com/shery15/Platform" class="highlight" target="_blank">
-								V·群发	
-							</a>
-						</h3>
-						<p>设计与切图，前端布局与后端API实现，使用jQuery，AJAX，Express，分页算法</p>
-					</div>
-					<div class="list">
-						<h3>
-							<a href="http://shery15.github.io/coffee" class="highlight" target="_blank">
-								咖啡派	
-							</a>
-						</h3>
-						<p>设计与切图，CSS3动画，响应式布局</p>
-					</div>
-					<div class="list">
-						<h3>
-							<a href="http://shery15.github.io/robot" class="highlight" target="_blank">
-								机器人在线	
-							</a>
-						</h3>
-						<p>设计与切图，CSS3动画，JS插件</p>
-						<p>负责设计、前端、后端</p>
-					</div>
-					<div class="list">
-						<h3>
-							<a href="https://github.com/shery15/shery15.github.io" class="highlight" target="_blank">
-								个人主页
-							</a>
-						</h3>
-						<p>利用GitHub Pages搭建的个人主页</p>
-					</div>
-					<p>
-						更多细节,请移步
-						<a href="https://github.com/shery15" class="highlight" target="_blank">
-							GitHub
-						</a>
-					</p>
-				</div>
-			</div>
-			<div class="section center" style="z-index: 3;" data-num="3">
-				<div class="content">
-					<h1>教育背景</h1>
-					<h2>西南科技大学 本科</h2>
-					<p>计算机科学与技术学院 信息安全专业</p>
-					<h4>
-						<a href="mailto:npcoci@gmail.com" target="_blank" class="highlight">
-							招我到碗里来吧！
-						</a>
-					</h4>
-				</div>
-			</div>
-			<div class="section center" style="z-index: 2;" data-num="4">
-				<div class="content">
-					<h1>心仪职位</h1>
-					<h2>Web前端工程师</h2>
-					<p>学习是一个充实而愉悦的过程</p>
-					<p>热爱前端开发，能将心中所想实现出来，这种感觉很愉快</p>
-					<p>热爱一切美好的事物</p>
-					<h6>工作地点：成都</h6>
-					<h4>
-						<a href="mailto:npcoci@gmail.com" target="_blank" class="highlight">
-							带上我吧，一起去看更大的世界！
-						</a>
-					</h4>
-				</div>
-			</div>
-			<div class="section center" style="z-index: 1;" data-num="5">
-				<div class="content">
-					<h1>了解更多</h1>
-					<h2>
-						<a href="../" target="_blank" class="highlight">个人主页</a>
-						|
-						<a href="https://cn.linkedin.com/in/shery2015" target="_blank" class="highlight">LinkedIn</a>
-					</h2>
-					<p>
-						Email:
-						<a href="mailto:npcoci@gmail.com" target="_blank">
-							npcoci@gmail.com
-						</a>
-					</p>
-					<h2>
-						<a href="pdf/cv_shery.pdf" target="_blank" class="highlight">
-							下载简历
-						</a>
-					</h2>
-					<div id="contact-panel">
-						<a href="http://weibo.com/u/2338175133" class="social weibo" target="_blank" title="Follow me on Sina Weibo"></a>
-						<a href="https://github.com/shery15" class="social github" target="_blank" title="Follow me on GitHub"></a>
-						<a href="https://cn.linkedin.com/in/shery2015" class="social linkedin" target="_blank" title="Follow me on LinkedIn"></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="nav" class="left">
-			<ul>
-				<li class="sidebar" data-tooltip="首页" data-num="0">
-					<a href="#" class="current">
-						<span></span>
-					</a>
-				</li>
-				<li class="sidebar" data-tooltip="技能" data-num="1">
-					<a href="#" class="">
-						<span></span>
-					</a>
-				</li>
-				<li class="sidebar" data-tooltip="作品" data-num="2">
-					<a href="#" class="">
-						<span></span>
-					</a>
-				</li>
-				<li class="sidebar" data-tooltip="教育" data-num="3">
-					<a href="#" class="">
-						<span></span>
-					</a>
-				</li>
-				<li class="sidebar" data-tooltip="求职" data-num="4">
-					<a href="#" class="">
-						<span></span>
-					</a>
-				</li>
-				<li class="sidebar" data-tooltip="联系" data-num="5">
-					<a href="#" class="">
-						<span></span>
-					</a>
-				</li>
-			</ul>
+			页面更新中~
+		<!--	<div class="section center active" style="z-index: 6;" data-num="0">-->
+		<!--		<div class="content">-->
+		<!--			<canvas id="avatar" width="236" height="236"></canvas>-->
+		<!--			<h1 id="title">许锐</h1>-->
+		<!--			<p>不忘初心，方得始终</p>-->
+		<!--			<h4>努力成为一个Web前端工程师</h4>-->
+		<!--			<p>-->
+		<!--				<a href="mailto:npcoci@gmail.com" class="highlight">npcoci@gmail.com</a>-->
+		<!--			</p>-->
+		<!--		</div>-->
+		<!--	</div>-->
+		<!--	<div class="section center" style="z-index: 5;" data-num="1">-->
+		<!--		<div class="content">-->
+		<!--			<h1>擅长技术</h1>-->
+		<!--			<div class="tag-panel">-->
+  <!--                  	<div class="tag expert">HTML</div>-->
+  <!--                  	<div class="tag expert">CSS</div>-->
+  <!--              	</div>-->
+	 <!--               <div class="tag-panel">-->
+	 <!--                   <div class="tag expert">JavaScript</div>-->
+	 <!--                   <div class="tag expert">jQuery</div>-->
+	 <!--                   <div class="tag">Bootstrap</div>-->
+	 <!--                   <div class="tag">node.js</div>    -->
+  <!--             		</div>-->
+  <!--             		<div class="tag-panel">-->
+	 <!--                   <div class="tag">HTML5</div>-->
+	 <!--                   <div class="tag">CSS3</div>-->
+	 <!--                   <div class="tag">less</div>-->
+	 <!--                   <div class="tag">express</div>    -->
+  <!--             		</div>-->
+  <!--             		<div class="tag-panel">-->
+	 <!--                   <div class="tag expert">网页设计</div>-->
+	 <!--                   <div class="tag">平面设计</div>-->
+	 <!--                   <div class="tag">音视频编辑</div>   -->
+  <!--             		</div>-->
+  <!--             		<div class="tag-panel">-->
+	 <!--                   <div class="tag expert">PhotoShop</div>-->
+	 <!--                   <div class="tag">Markdown</div> -->
+  <!--             		</div>-->
+		<!--		</div>-->
+		<!--	</div>-->
+		<!--	<div class="section center" style="z-index: 4;" data-num="2">-->
+		<!--		<div class="content">-->
+		<!--			<h1>个人作品</h1>-->
+		<!--			<div class="list">-->
+		<!--				<h3>-->
+		<!--					<a href="https://github.com/shery15/Platform" class="highlight" target="_blank">-->
+		<!--						V·群发	-->
+		<!--					</a>-->
+		<!--				</h3>-->
+		<!--				<p>设计与切图，前端布局与后端API实现，使用jQuery，AJAX，Express，分页算法</p>-->
+		<!--			</div>-->
+		<!--			<div class="list">-->
+		<!--				<h3>-->
+		<!--					<a href="http://shery15.github.io/coffee" class="highlight" target="_blank">-->
+		<!--						咖啡派	-->
+		<!--					</a>-->
+		<!--				</h3>-->
+		<!--				<p>设计与切图，CSS3动画，响应式布局</p>-->
+		<!--			</div>-->
+		<!--			<div class="list">-->
+		<!--				<h3>-->
+		<!--					<a href="http://shery15.github.io/robot" class="highlight" target="_blank">-->
+		<!--						机器人在线	-->
+		<!--					</a>-->
+		<!--				</h3>-->
+		<!--				<p>设计与切图，CSS3动画，JS插件</p>-->
+		<!--				<p>负责设计、前端、后端</p>-->
+		<!--			</div>-->
+		<!--			<div class="list">-->
+		<!--				<h3>-->
+		<!--					<a href="https://github.com/shery15/shery15.github.io" class="highlight" target="_blank">-->
+		<!--						个人主页-->
+		<!--					</a>-->
+		<!--				</h3>-->
+		<!--				<p>利用GitHub Pages搭建的个人主页</p>-->
+		<!--			</div>-->
+		<!--			<p>-->
+		<!--				更多细节,请移步-->
+		<!--				<a href="https://github.com/shery15" class="highlight" target="_blank">-->
+		<!--					GitHub-->
+		<!--				</a>-->
+		<!--			</p>-->
+		<!--		</div>-->
+		<!--	</div>-->
+		<!--	<div class="section center" style="z-index: 3;" data-num="3">-->
+		<!--		<div class="content">-->
+		<!--			<h1>教育背景</h1>-->
+		<!--			<h2>西南科技大学 本科</h2>-->
+		<!--			<p>计算机科学与技术学院 信息安全专业</p>-->
+		<!--			<h4>-->
+		<!--				<a href="mailto:npcoci@gmail.com" target="_blank" class="highlight">-->
+		<!--					招我到碗里来吧！-->
+		<!--				</a>-->
+		<!--			</h4>-->
+		<!--		</div>-->
+		<!--	</div>-->
+		<!--	<div class="section center" style="z-index: 2;" data-num="4">-->
+		<!--		<div class="content">-->
+		<!--			<h1>心仪职位</h1>-->
+		<!--			<h2>Web前端工程师</h2>-->
+		<!--			<p>学习是一个充实而愉悦的过程</p>-->
+		<!--			<p>热爱前端开发，能将心中所想实现出来，这种感觉很愉快</p>-->
+		<!--			<p>热爱一切美好的事物</p>-->
+		<!--			<h6>工作地点：成都</h6>-->
+		<!--			<h4>-->
+		<!--				<a href="mailto:npcoci@gmail.com" target="_blank" class="highlight">-->
+		<!--					带上我吧，一起去看更大的世界！-->
+		<!--				</a>-->
+		<!--			</h4>-->
+		<!--		</div>-->
+		<!--	</div>-->
+		<!--	<div class="section center" style="z-index: 1;" data-num="5">-->
+		<!--		<div class="content">-->
+		<!--			<h1>了解更多</h1>-->
+		<!--			<h2>-->
+		<!--				<a href="../" target="_blank" class="highlight">个人主页</a>-->
+		<!--				|-->
+		<!--				<a href="https://cn.linkedin.com/in/shery2015" target="_blank" class="highlight">LinkedIn</a>-->
+		<!--			</h2>-->
+		<!--			<p>-->
+		<!--				Email:-->
+		<!--				<a href="mailto:npcoci@gmail.com" target="_blank">-->
+		<!--					npcoci@gmail.com-->
+		<!--				</a>-->
+		<!--			</p>-->
+		<!--			<h2>-->
+		<!--				<a href="pdf/cv_shery.pdf" target="_blank" class="highlight">-->
+		<!--					下载简历-->
+		<!--				</a>-->
+		<!--			</h2>-->
+		<!--			<div id="contact-panel">-->
+		<!--				<a href="http://weibo.com/u/2338175133" class="social weibo" target="_blank" title="Follow me on Sina Weibo"></a>-->
+		<!--				<a href="https://github.com/shery15" class="social github" target="_blank" title="Follow me on GitHub"></a>-->
+		<!--				<a href="https://cn.linkedin.com/in/shery2015" class="social linkedin" target="_blank" title="Follow me on LinkedIn"></a>-->
+		<!--			</div>-->
+		<!--		</div>-->
+		<!--	</div>-->
+		<!--</div>-->
+		<!--<div id="nav" class="left">-->
+		<!--	<ul>-->
+		<!--		<li class="sidebar" data-tooltip="首页" data-num="0">-->
+		<!--			<a href="#" class="current">-->
+		<!--				<span></span>-->
+		<!--			</a>-->
+		<!--		</li>-->
+		<!--		<li class="sidebar" data-tooltip="技能" data-num="1">-->
+		<!--			<a href="#" class="">-->
+		<!--				<span></span>-->
+		<!--			</a>-->
+		<!--		</li>-->
+		<!--		<li class="sidebar" data-tooltip="作品" data-num="2">-->
+		<!--			<a href="#" class="">-->
+		<!--				<span></span>-->
+		<!--			</a>-->
+		<!--		</li>-->
+		<!--		<li class="sidebar" data-tooltip="教育" data-num="3">-->
+		<!--			<a href="#" class="">-->
+		<!--				<span></span>-->
+		<!--			</a>-->
+		<!--		</li>-->
+		<!--		<li class="sidebar" data-tooltip="求职" data-num="4">-->
+		<!--			<a href="#" class="">-->
+		<!--				<span></span>-->
+		<!--			</a>-->
+		<!--		</li>-->
+		<!--		<li class="sidebar" data-tooltip="联系" data-num="5">-->
+		<!--			<a href="#" class="">-->
+		<!--				<span></span>-->
+		<!--			</a>-->
+		<!--		</li>-->
+		<!--	</ul>-->
 		</div>
 	</body>
 </html>
