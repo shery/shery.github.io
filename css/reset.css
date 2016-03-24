@@ -12,6 +12,7 @@ table { border-collapse: collapse; }
 a { color: #000; text-decoration: none; }
 a:hover { text-decoration: none; cursor: pointer; }
 img { border: none; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
 
 
 .clearfix:after { content: "\200B"; display: block; height: 0; clear: both; }
