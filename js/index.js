@@ -50,6 +50,6 @@ var draw = function() {
      	container.appendChild(img);
     }
 };
-$(document).ready(function() {
-	draw();
-});
+// $(document).ready(function() {
+// 	draw();
+// });
