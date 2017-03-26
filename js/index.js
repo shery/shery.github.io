@@ -1,55 +1,47 @@
-var draw = function() {
-	var canvas = document.getElementById("avatar");
-   	if (canvas.getContext) {
-	    var logo = canvas.getContext("2d");
+var Ribbon = {
+  ribbonWidth: 0,
+  ribbonHeight: 0,
+  init: function() {
+    Ribbon.scale = Ribbon.getPixelRatio();
+    Ribbon.canvas = Ribbon.getCanvas();
+    this.resizeRibbon();
 
-	    logo.fillStyle = "rgb(255,255,255)";
-	    logo.fillRect (0, 0, 100, 200);
-
-	    logo.fillStyle = "rgb(34, 195, 169)";
-	    logo.fillRect (100, 0, 100, 200);
-
-	    logo.lineWidth = 3;
-	    logo.lineCap = "round";
-	    logo.lineJoin= "miter";
-	    logo.beginPath();
-	    logo.moveTo(100,158);
-	    logo.lineTo(122,130);
-	    logo.lineTo(110,84);/*折点*/
-		logo.lineTo(124,60);
-		logo.lineTo(164,46);
-	    logo.strokeStyle = "rgb(255,255,255)"
-	    logo.stroke();
-
-	    logo.beginPath();
-	    logo.moveTo(110,84);
-	    logo.lineTo(146,72);
-	    logo.strokeStyle = "rgb(255,255,255)"
-	    logo.stroke();
-
-	    logo.beginPath();
-	    logo.moveTo(100,158);
-	    logo.lineTo(78,130);
-	    logo.lineTo(90,84);/*折点*/
-	    logo.lineTo(76,60);
-	    logo.lineTo(36,46);
-	    logo.strokeStyle = "rgb(34,195,169)"
-	    logo.stroke();
-
-	    logo.beginPath();
-	    logo.moveTo(90,84);
-	    logo.lineTo(54,72);
-	    logo.strokeStyle = "rgb(34,195,169)"
-	    logo.stroke();
-   	} else {
-     	var container = document.getElementById("container");
-     	container.removeChild(canvas);
-     	var img = document.createElement("img");
-     	img.setAttribute("id","avatar");
-		img.setAttribute("src","images/avatar.png");
-     	container.appendChild(img);
-    }
+  },
+  getCanvas: function() {
+    return document.getElementById('bg');
+  },
+  getPixelRatio: function() {
+    if (window.devicePixelRatio) return window.devicePixelRatio;
+    if (window.matchMedia && window.matchMedia("(-moz-device-pixel-ratio: 2.0)").matches) return 2;
+  },
+  resizeRibbon: function() {
+    768 > window.innerWidth ? (this.ribbonWidth = 60,
+    this.ribbonHeight = 40) : (this.ribbonWidth = 136,
+    this.ribbonHeight = 60);
+    var wHeight = window.innerHeight;
+    var wWidth = window.innerWidth;
+    this.canvas.width = wWidth * this.scale;
+    this.canvas.height = wHeight * this.scale;
+    this.canvas.style.width = wWidth + 'px';
+    this.canvas.style.height = wHeight + this.ribbonHeight + 'px';
+  }
 };
-// $(document).ready(function() {
-// 	draw();
-// });
+
+Ribbon.init();
+// this.resizeRibbon = function() {
+//     this.ribbon && (this.ribbon.setWidth(this.ribbonWidth, this.ribbonHeight),
+//     this.ribbon.straighten(),
+//     this.ribbon.resetSize())
+// }
+
+function draw() {
+  var ctx = document.getElementById('bg').getContext('2d');
+  for (var i=0;i<6;i++){
+    for (var j=0;j<6;j++){
+      ctx.fillStyle = 'rgb(' + Math.floor(255-42.5*i) + ',' +
+                       Math.floor(255-42.5*j) + ',0)';
+      ctx.fillRect(j*25,i*25,25,25);
+    }
+  }
+}
+draw()
