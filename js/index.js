@@ -27,7 +27,7 @@ var Ribbon = {
   }
 };
 
-Ribbon.init();
+// Ribbon.init();
 // this.resizeRibbon = function() {
 //     this.ribbon && (this.ribbon.setWidth(this.ribbonWidth, this.ribbonHeight),
 //     this.ribbon.straighten(),
